@@ -1,0 +1,66 @@
+[gd_scene load_steps=8 format=3 uid="uid://bk13g5u8dlkw5"]
+
+[ext_resource type="Script" uid="uid://cw8u1k4ly35se" path="res://Objects/Entities/Enemies/BasicEnemy/enemy.gd" id="1_twpdn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_16c5w"]
+albedo_color = Color(0.196078, 0.223529, 1, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_nfiwy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_twpdn"]
+albedo_color = Color(0.9252882, 0.9343878, 0.9995428, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_spsdk"]
+radius = 0.07
+height = 0.14
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_swcoo"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7rnlx"]
+radius = 0.53
+height = 2.03
+
+[node name="Enemy" type="CharacterBody3D" groups=["Enemy"]]
+script = ExtResource("1_twpdn")
+speed = 2.5
+jump_velocity = 4.5
+
+[node name="Model" type="MeshInstance3D" parent="."]
+layers = 2
+material_override = SubResource("StandardMaterial3D_16c5w")
+mesh = SubResource("CapsuleMesh_nfiwy")
+
+[node name="Model2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.18664655, 0.4382802, 0.4740097)
+layers = 2
+material_override = SubResource("StandardMaterial3D_twpdn")
+mesh = SubResource("CapsuleMesh_spsdk")
+
+[node name="Model3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.18333495, 0.4382802, 0.4740097)
+layers = 2
+material_override = SubResource("StandardMaterial3D_twpdn")
+mesh = SubResource("CapsuleMesh_spsdk")
+
+[node name="Hitbox" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_swcoo")
+
+[node name="Health" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.278569, 0)
+billboard = 1
+modulate = Color(0.9348055, 0, 0.18990156, 1)
+text = "0"
+
+[node name="DamageArea" type="Area3D" parent="."]
+collision_layer = 8
+collision_mask = 4
+monitoring = false
+monitorable = false
+
+[node name="Hitbox" type="CollisionShape3D" parent="DamageArea"]
+shape = SubResource("CapsuleShape3D_7rnlx")
+disabled = true
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[connection signal="body_entered" from="DamageArea" to="." method="_on_damage_area_body_entered"]

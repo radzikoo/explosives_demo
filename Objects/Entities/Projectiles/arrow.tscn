@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=3 uid="uid://dira71b32v7yy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6ascj"]
+albedo_color = Color(0.8299974, 0.18807426, 0.2619839, 1)
+emission_enabled = true
+emission = Color(0.9890024, 0.53456527, 0.728827, 1)
+emission_energy_multiplier = 1.2
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_jm1kk"]
+material = SubResource("StandardMaterial3D_6ascj")
+top_radius = 0.025
+bottom_radius = 0.025
+height = 0.3
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_6ascj"]
+height = 0.35634765
+radius = 0.025
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jm1kk"]
+albedo_color = Color(0.08445693, 0.24661577, 0.762521, 1)
+emission_enabled = true
+emission = Color(0.10034246, 0.28425336, 0.60014206, 1)
+emission_energy_multiplier = 1.2
+
+[sub_resource type="PrismMesh" id="PrismMesh_x8jxp"]
+material = SubResource("StandardMaterial3D_jm1kk")
+size = Vector3(0.055, 0.055, 0.055)
+
+[node name="Bullet" type="RigidBody3D" groups=["Projectile"]]
+collision_layer = 2
+mass = 0.1
+freeze_mode = 1
+continuous_cd = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+mesh = SubResource("CylinderMesh_jm1kk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 1.2315168e-09, -0.02817382)
+shape = SubResource("CylinderShape3D_6ascj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, -0.17847541)
+mesh = SubResource("PrismMesh_x8jxp")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 7.0
+one_shot = true
+autostart = true
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+target_position = Vector3(0, 0, -0.37)
+collision_mask = 5
+collide_with_areas = true

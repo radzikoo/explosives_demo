@@ -1,0 +1,15 @@
+[gd_resource type="QuadMesh" load_steps=3 format=3 uid="uid://dt6e4swoo6eh6"]
+
+[ext_resource type="Texture2D" uid="uid://xrr7v08bkj3m" path="res://Assets/2D/Textures/stone.png" id="1_f2t6f"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sxpdn"]
+albedo_texture = ExtResource("1_f2t6f")
+metallic = 1.0
+metallic_texture = ExtResource("1_f2t6f")
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+texture_filter = 0
+
+[resource]
+material = SubResource("StandardMaterial3D_sxpdn")
+orientation = 1

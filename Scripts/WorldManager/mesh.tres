@@ -1,0 +1,15 @@
+[gd_resource type="BoxMesh" load_steps=3 format=3 uid="uid://bgy1jhjd3xyvb"]
+
+[ext_resource type="Texture2D" uid="uid://xrr7v08bkj3m" path="res://Assets/2D/Textures/stone.png" id="1_7mddl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7mddl"]
+albedo_texture = ExtResource("1_7mddl")
+metallic = 1.0
+metallic_texture = ExtResource("1_7mddl")
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+texture_filter = 0
+
+[resource]
+material = SubResource("StandardMaterial3D_7mddl")
+size = Vector3(1, 0.5, 1)

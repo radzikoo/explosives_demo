@@ -1,0 +1,160 @@
+[gd_scene load_steps=8 format=3 uid="uid://cbwmjfmsixre"]
+
+[ext_resource type="Script" uid="uid://b1ffvrolhrupb" path="res://Objects/Entities/Player/player.gd" id="1_dl76h"]
+[ext_resource type="Shader" uid="uid://8l4jam6cact4" path="res://Objects/Entities/Player/crosshair.gdshader" id="3_rwkt4"]
+[ext_resource type="Script" uid="uid://5holnkba03s1" path="res://Objects/Entities/Player/ui.gd" id="3_wwvg7"]
+[ext_resource type="Texture2D" uid="uid://64s7cymliucf" path="res://Assets/2D/Textures/crosshair.png" id="4_q3yuq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e6v1b"]
+size = Vector3(0.7, 1.8, 0.7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vsbmu"]
+size = Vector3(0.7, 1.8, 0.7)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q3yuq"]
+shader = ExtResource("3_rwkt4")
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_dl76h")
+
+[node name="Head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.54587, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Head"]
+current = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+shape = SubResource("BoxShape3D_e6v1b")
+
+[node name="Body" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Body"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+mesh = SubResource("BoxMesh_vsbmu")
+skeleton = NodePath("../..")
+
+[node name="DamageArea" type="Area3D" parent="."]
+collision_layer = 8
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DamageArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+shape = SubResource("BoxShape3D_e6v1b")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("3_wwvg7")
+
+[node name="Metrics" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 2.0
+offset_right = 194.0
+offset_bottom = 49.0
+text = "Frames per second: 0000
+XYZ: 0,0,0
+Standing at chunk: X,Y
+Looking at chunk: X,Y
+"
+
+[node name="HealthBar" type="ProgressBar" parent="UI"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -307.5
+offset_top = 5.0
+offset_right = 307.5
+offset_bottom = 32.0
+grow_horizontal = 2
+
+[node name="WeaponCharge" type="ProgressBar" parent="UI"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -87.0
+offset_top = 54.0
+offset_right = 87.0
+offset_bottom = 81.0
+grow_horizontal = 2
+grow_vertical = 2
+min_value = 0.25
+max_value = 1.0
+value = 0.25
+show_percentage = false
+
+[node name="Crosshair" type="TextureRect" parent="UI"]
+texture_filter = 1
+material = SubResource("ShaderMaterial_q3yuq")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -15.0
+offset_top = -15.0
+offset_right = 15.0
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_q3yuq")
+
+[node name="Teleporter" type="Control" parent="UI"]
+anchors_preset = 0
+offset_top = 138.0
+offset_right = 374.0
+offset_bottom = 311.0
+
+[node name="VBoxContainer" type="HBoxContainer" parent="UI/Teleporter"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 112.0
+offset_right = 125.0
+offset_bottom = 143.0
+
+[node name="Teleport" type="Button" parent="UI/Teleporter/VBoxContainer"]
+layout_mode = 2
+text = "Teleport"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/Teleporter"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 68.0
+offset_right = 363.0
+offset_bottom = 104.0
+
+[node name="XC" type="LineEdit" parent="UI/Teleporter/HBoxContainer"]
+layout_mode = 2
+placeholder_text = "X"
+
+[node name="YC" type="LineEdit" parent="UI/Teleporter/HBoxContainer"]
+layout_mode = 2
+placeholder_text = "Y"
+
+[node name="ZC" type="LineEdit" parent="UI/Teleporter/HBoxContainer"]
+layout_mode = 2
+placeholder_text = "Z"
+
+[node name="AutoJumpDetector" type="Node3D" parent="."]
+
+[node name="RayCast3D" type="RayCast3D" parent="AutoJumpDetector"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45, 0)
+target_position = Vector3(0, 0, -0.6)
+
+[node name="RayCast3D2" type="RayCast3D" parent="AutoJumpDetector"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.15, 0)
+target_position = Vector3(0, 0, -0.6)
+
+[connection signal="body_entered" from="DamageArea" to="." method="_on_damage_area_body_entered"]
+[connection signal="pressed" from="UI/Teleporter/VBoxContainer/Teleport" to="UI" method="_on_teleport_pressed"]
