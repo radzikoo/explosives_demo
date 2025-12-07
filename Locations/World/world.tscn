@@ -75,7 +75,7 @@ events = [SubResource("InputEventKey_wc08i")]
 
 [node name="Player" parent="." instance=ExtResource("2_rpyd7")]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.604406, 0.90291405, 15.144934)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 15, 1)
 sprint_speed = 24.0
 jump_velocity = 6.3
 
@@ -345,7 +345,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.627077, 1.3625443, 4.0449
 [node name="ChunkManager" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -0.5, -0.5)
 script = ExtResource("9_vlley")
-world_size = Vector2(12, 12)
+world_size = Vector2(1, 1)
 chunk_size = Vector3(6, 7, 6)
 tile_size = Vector3(1, 0.5, 1)
 

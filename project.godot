@@ -13,6 +13,7 @@ config_version=5
 config/name="explosives_demo"
 run/main_scene="uid://ddmkbl64gds87"
 config/features=PackedStringArray("4.5", "C#", "Forward Plus")
+run/max_fps=75
 boot_splash/bg_color=Color(0.0253638, 0.0253638, 0.025363795, 1)
 config/icon="uid://b42whd6p0o5xh"
 

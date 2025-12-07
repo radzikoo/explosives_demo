@@ -174,7 +174,7 @@ func get_target():
 		
 		# -- Y --
 		if target_face == Vector3(0,1,0):
-			snapped_targetpos.y = (snapped(floor(target_pos.y), 1))-1
+			snapped_targetpos.y = (snapped(floor(target_pos.y), 0.5))*2
 		else:
 			pass
 			snapped_targetpos.y = (snapped(floor(target_pos.y), 1))
@@ -195,8 +195,8 @@ func get_target():
 			#print("=======")
 			#print("FACE: ", target_face)
 			#print("CHUNK: ", target_chunk_id)
-			#print("TARGET POS: ", target_pos)
-			#print("SNAPP TARG POS: ", snapped_targetpos)
+			print("TARGET POS: ", target_pos)
+			print("SNAPP TARG POS: ", snapped_targetpos)
 		if Input.is_action_just_pressed("place"):
 			chunk_manager.place_tile(snapped_targetpos, target_chunk_id)
 

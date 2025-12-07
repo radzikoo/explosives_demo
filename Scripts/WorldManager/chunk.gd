@@ -38,7 +38,7 @@ func _generate_chunk():
 			var raw_height = (noise.get_noise_2dv(Vector2(Tx+(chunk_id.x*chunk_size.x), Tz+(chunk_id.y*chunk_size.z))) + 1.0) / 2.0 * chunk_size.y
 			var height = round(raw_height * 2.0) / 2.0
 			for Ty in range(int(floor(height / 0.5))):
-				_add_tile_to_chunk(Vector3(Tx, Ty, Tz))
+				_add_tile_to_chunk(Vector3(Tx, Ty/2, Tz))
 	var visible_tiles = _check_tiles_visibility()
 	_generate_multimesh(visible_tiles)
 
