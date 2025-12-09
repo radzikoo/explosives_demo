@@ -1,18 +1,22 @@
-[gd_scene load_steps=8 format=3 uid="uid://cbwmjfmsixre"]
+[gd_scene load_steps=9 format=3 uid="uid://cbwmjfmsixre"]
 
 [ext_resource type="Script" uid="uid://b1ffvrolhrupb" path="res://Objects/Entities/Player/player.gd" id="1_dl76h"]
 [ext_resource type="Shader" uid="uid://8l4jam6cact4" path="res://Objects/Entities/Player/crosshair.gdshader" id="3_rwkt4"]
 [ext_resource type="Script" uid="uid://5holnkba03s1" path="res://Objects/Entities/Player/ui.gd" id="3_wwvg7"]
 [ext_resource type="Texture2D" uid="uid://64s7cymliucf" path="res://Assets/2D/Textures/crosshair.png" id="4_q3yuq"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_e6v1b"]
+[sub_resource type="BoxMesh" id="BoxMesh_vsbmu"]
 size = Vector3(0.7, 1.8, 0.7)
 
-[sub_resource type="BoxMesh" id="BoxMesh_vsbmu"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_e6v1b"]
 size = Vector3(0.7, 1.8, 0.7)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_q3yuq"]
 shader = ExtResource("3_rwkt4")
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_q3yuq"]
+height = 1.0
+radius = 7.263
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_dl76h")
@@ -23,16 +27,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.54587, 0)
 [node name="Camera3D" type="Camera3D" parent="Head"]
 current = true
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
-shape = SubResource("BoxShape3D_e6v1b")
-
 [node name="Body" type="Node3D" parent="."]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Body"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
 mesh = SubResource("BoxMesh_vsbmu")
 skeleton = NodePath("../..")
+
+[node name="Collision" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+shape = SubResource("BoxShape3D_e6v1b")
 
 [node name="DamageArea" type="Area3D" parent="."]
 collision_layer = 8
@@ -156,5 +160,15 @@ target_position = Vector3(0, 0, -0.6)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.15, 0)
 target_position = Vector3(0, 0, -0.6)
 
+[node name="EntityDetector" type="Area3D" parent="."]
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EntityDetector"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("CylinderShape3D_q3yuq")
+
 [connection signal="body_entered" from="DamageArea" to="." method="_on_damage_area_body_entered"]
 [connection signal="pressed" from="UI/Teleporter/VBoxContainer/Teleport" to="UI" method="_on_teleport_pressed"]
+[connection signal="body_entered" from="EntityDetector" to="." method="_on_entity_detector_body_entered"]
+[connection signal="body_exited" from="EntityDetector" to="." method="_on_entity_detector_body_exited"]

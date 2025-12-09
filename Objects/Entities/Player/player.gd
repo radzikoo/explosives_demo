@@ -1,20 +1,6 @@
 extends CharacterBody3D
 class_name Player
 
-var cursor_hidden: bool = true
-
-var health:float = 100
-
-func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-
-func _physics_process(delta: float) -> void:
-	$UI/HealthBar.value = health
-	_player_movement(delta)
-	_check_chunk_collisions()
-	get_raycast()
-	get_target()
-	
 @export var auto_jump:bool = true
 @export var speed:float
 @export var walk_speed = 3.2
@@ -28,15 +14,24 @@ func _physics_process(delta: float) -> void:
 @export var fov_change = 0.5
 @export var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
+var cursor_hidden: bool = true
+
+var health:float = 100
+
+func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+
+func _physics_process(delta: float) -> void:
+	$UI/HealthBar.value = health
+	_player_movement(delta)
+	get_raycast()
+	get_target()
+	_check_nearby_enemies()
+	
 @onready var head:Node3D = $Head
 @onready var camera:Camera3D = $Head/Camera3D
-
 @onready var ajd1: RayCast3D = $AutoJumpDetector/RayCast3D
 @onready var ajd2: RayCast3D = $AutoJumpDetector/RayCast3D2
-
-var standing_at_chunk_id:Vector2
-var target_chunk_id:Vector2
-@onready var chunk_manager: Node3D = $"../ChunkManager"
 
 func _player_movement(delta: float) -> void:
 	
@@ -93,21 +88,21 @@ func _player_movement(delta: float) -> void:
 	if Input.is_action_just_pressed("explode"):
 		PFX.sphere_explosion(self.global_transform, 10, 1)
 			
-	
-	if auto_jump:
-		if direction:
-			ajd1.target_position = direction/1.5
-			ajd2.target_position = direction/1.5
-		
-		if direction != Vector3.ZERO:
-			if ajd1.is_colliding() and not ajd2.is_colliding():
-				if ajd1.get_collider().is_in_group("Terrain"):
-					if !ajd1.is_colliding():
-						pass
-					else: 
-						if velocity.y == 0:
-							velocity.y += jump_velocity
-							#print("Autojumped")
+	#
+	#if auto_jump:
+		#if direction:
+			#ajd1.target_position = direction/1.5
+			#ajd2.target_position = direction/1.5
+		#
+		#if direction != Vector3.ZERO:
+			#if ajd1.is_colliding() and not ajd2.is_colliding():
+				#if ajd1.get_collider().is_in_group("Terrain"):
+					#if !ajd1.is_colliding():
+						#pass
+					#else: 
+						#if velocity.y == 0:
+							#velocity.y += jump_velocity
+							##print("Autojumped")
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
@@ -124,6 +119,9 @@ func _headbob(time) -> Vector3:
 
 const RAY_LENGTH:float = 4
 var raycast_result:Dictionary
+var standing_at_chunk_id:Vector2
+var target_chunk_id:Vector2
+@onready var chunk_manager: Node3D = $"../ChunkManager"
 
 func get_raycast():
 	#Intersects a ray in a given space. 
@@ -174,7 +172,7 @@ func get_target():
 		
 		# -- Y --
 		if target_face == Vector3(0,1,0):
-			snapped_targetpos.y = (snapped(floor(target_pos.y), 0.5))*2
+			snapped_targetpos.y = (snapped(floor(target_pos.y), 1))-1
 		else:
 			pass
 			snapped_targetpos.y = (snapped(floor(target_pos.y), 1))
@@ -209,9 +207,23 @@ func _on_damage_area_body_entered(body: Node3D) -> void:
 func take_damage(damage:float):
 	health -= damage
 
-func _check_chunk_collisions():
-	pass
-#	for tile in chunk.chunk_tiles:
-		#print(Misc.truncate_v3(chunk.chunk_tiles[tile]["position"]))
-	#	if Misc.truncate_v3(chunk.chunk_tiles[tile]["position"]) == Misc.truncate_v3(self.global_position):
-		#	print("d")
+var nearby_enemies:Array
+var frame_counter_A:int = 0
+
+func _on_entity_detector_body_entered(body: Node3D) -> void:
+	if body.is_in_group("Enemy"):
+		nearby_enemies.append(body)
+
+func _on_entity_detector_body_exited(body: Node3D) -> void:
+	if body.is_in_group("Enemy"):
+		nearby_enemies.erase(body)
+		body.target = null
+
+func _check_nearby_enemies():
+	if nearby_enemies.is_empty():
+		return
+	frame_counter_A += 1
+	if frame_counter_A % 4 == 0:
+		for enemy in nearby_enemies:
+			if enemy.target != self:
+				enemy.target = self

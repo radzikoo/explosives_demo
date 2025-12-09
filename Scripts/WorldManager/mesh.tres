@@ -12,4 +12,3 @@ texture_filter = 0
 
 [resource]
 material = SubResource("StandardMaterial3D_7mddl")
-size = Vector3(1, 0.5, 1)

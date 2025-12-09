@@ -2,27 +2,26 @@ extends CharacterBody3D
 
 @export var speed:float
 @export var jump_velocity:float
-
-#IDLE,RUN_ATTACK,WANDER,ATTACKING
-var state:Misc.entity_state = Misc.entity_state.WANDER
+var health:float = 100
+@onready var healthbar: Label3D = $Health
 
 @export var entity_active:bool = false
+#IDLE,RUN_ATTACK,WANDER,ATTACKING
+var state:Misc.entity_state = Misc.entity_state.WANDER
+var target: Object
+var check_raycast:bool = false
 
 var rand_pos:Vector3
 var can_get_rand_pos:bool
 @onready var navagent: NavigationAgent3D = $NavigationAgent3D
-
-@onready var healthbar: Label3D = $Health
-var health:float = 100
-var target: Object
-var check_raycast:bool = false
-
 @onready var player: CharacterBody3D = %Player
-
 var space_state
+var entity_height:int
 
 func _ready() -> void:
+	entity_height = $Hitbox.shape.height
 	space_state = get_world_3d().direct_space_state
+	await NavigationServer3D.map_changed
 	get_rand_pos()
 
 func _physics_process(delta: float) -> void:
@@ -39,20 +38,22 @@ func _physics_process(delta: float) -> void:
 func get_rand_pos():
 	var posx = randi_range(-5,5)
 	var posz = randi_range(-5,5)
+	var fpos = Vector3(global_position.x + posx, global_position.y+entity_height, global_position.z + posz)
 	#NavigationServer3D.map_get_closest_point(navagent.get_navigation_map(), Vector3(global_position.x + posx, global_position.y, global_position.z + posz))
-	rand_pos = NavigationServer3D.map_get_closest_point(navagent.get_navigation_map(), 
-	Vector3(global_position.x + posx, global_position.y, global_position.z + posz))
+	rand_pos = NavigationServer3D.map_get_closest_point(navagent.get_navigation_map(), fpos)
 	#print("d")
 	can_get_rand_pos = false
+	print(fpos)
+	#print(rand_pos)
 
 func _handle_movement(delta):
-	if arrows <= 0:
-		if self.global_position.distance_to(player.global_position) < 7:
-			if target != player:
-				target = player
-		else:
-			if target != null:
-				target = null
+	#if arrows <= 0:
+		#if self.global_position.distance_to(player.global_position) < 7:
+			#if target != player:
+				#target = player
+		#else:
+			#if target != null:
+				#target = null
 	
 	match state:
 		Misc.entity_state.IDLE:
@@ -61,7 +62,7 @@ func _handle_movement(delta):
 				a_time = a_wait_time
 			
 		Misc.entity_state.WANDER:
-			if global_position.distance_to(rand_pos) > 2:
+			if global_position.distance_to(rand_pos) > 1.5:
 				#print(global_position.distance_to(rand_pos))
 				#print("asd")
 				navagent.set_target_position(rand_pos)
