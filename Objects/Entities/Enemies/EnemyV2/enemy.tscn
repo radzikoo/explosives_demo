@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://o8287imtfnaq"]
+
+[ext_resource type="Script" uid="uid://c180q7qstp0ev" path="res://Objects/Entities/Enemies/EnemyV2/enemy_v2.gd" id="1_26u6c"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_26u6c"]
+albedo_color = Color(0.9524258, 0.44239953, 0.5726673, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_26u6c"]
+material = SubResource("StandardMaterial3D_26u6c")
+size = Vector3(0.7, 1.8, 0.7)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4paj3"]
+albedo_color = Color(0.9252882, 0.9343878, 0.9995428, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_xn8ut"]
+radius = 0.07
+height = 0.14
+
+[node name="Enemy" type="Node3D"]
+script = ExtResource("1_26u6c")
+
+[node name="Model" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+mesh = SubResource("BoxMesh_26u6c")
+
+[node name="Model2" type="MeshInstance3D" parent="Model"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.18664655, 0.43828022, 0.33423257)
+layers = 2
+material_override = SubResource("StandardMaterial3D_4paj3")
+mesh = SubResource("CapsuleMesh_xn8ut")
+
+[node name="Model3" type="MeshInstance3D" parent="Model"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.18333495, 0.43828022, 0.33423257)
+layers = 2
+material_override = SubResource("StandardMaterial3D_4paj3")
+mesh = SubResource("CapsuleMesh_xn8ut")
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.12571847, 0)
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]

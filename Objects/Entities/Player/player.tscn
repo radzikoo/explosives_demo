@@ -161,7 +161,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.15, 0)
 target_position = Vector3(0, 0, -0.6)
 
 [node name="EntityDetector" type="Area3D" parent="."]
-monitoring = false
 monitorable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EntityDetector"]
