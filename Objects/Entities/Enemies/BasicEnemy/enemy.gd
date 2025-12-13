@@ -8,7 +8,7 @@ var health:float = 100
 @export var entity_active:bool = false
 #IDLE,RUN_ATTACK,WANDER,ATTACKING
 var state:Misc.entity_state = Misc.entity_state.WANDER
-var target: Object
+var entity_target: Object
 var check_raycast:bool = false
 
 var rand_pos:Vector3
@@ -19,6 +19,9 @@ var space_state
 var entity_height:int
 
 func _ready() -> void:
+	if !entity_active:
+		$Hitbox.disabled = true
+		$DamageArea/Hitbox.disabled = true
 	entity_height = $Hitbox.shape.height
 	space_state = get_world_3d().direct_space_state
 	await NavigationServer3D.map_changed
@@ -49,11 +52,11 @@ func get_rand_pos():
 func _handle_movement(delta):
 	#if arrows <= 0:
 		#if self.global_position.distance_to(player.global_position) < 7:
-			#if target != player:
-				#target = player
+			#if entity_target != player:
+				#entity_target = player
 		#else:
-			#if target != null:
-				#target = null
+			#if entity_target != null:
+				#entity_target = null
 	
 	match state:
 		Misc.entity_state.IDLE:
@@ -88,10 +91,10 @@ func _handle_movement(delta):
 				#a_time = a_wait_time
 			
 		Misc.entity_state.ATTACKING:
-			if target:
+			if entity_target:
 				a_time += delta
 				if a_time >= a_wait_time:
-					target.take_damage(10)
+					entity_target.take_damage(10)
 					a_time = 0
 					
 var a_time:float = a_wait_time
@@ -99,7 +102,7 @@ var a_wait_time:float = 2
 var result:Dictionary
 
 func _handle_target():
-	if target:
+	if entity_target:
 		var player_pos = Vector3(player.global_position.x, player.global_position.y + 1.5, player.global_position.z)
 		var enemy_pos = Vector3(self.global_position.x, self.global_position.y + 1.5, self.global_position.z)
 		var query = PhysicsRayQueryParameters3D.create(enemy_pos, player_pos)
@@ -135,7 +138,7 @@ func take_damage(damage:float, from:Object):
 
 func _attack_from_far(from:Object):
 	arrows += 1
-	target = from
+	entity_target = from
 	state = Misc.entity_state.RUN_ATTACK
 	await get_tree().create_timer(6).timeout
 	arrows -= 1

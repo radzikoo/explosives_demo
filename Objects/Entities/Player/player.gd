@@ -217,7 +217,18 @@ func _on_entity_detector_body_entered(body: Node3D) -> void:
 func _on_entity_detector_body_exited(body: Node3D) -> void:
 	if body.is_in_group("Enemy"):
 		nearby_enemies.erase(body)
-		body.target = null
+		body.entity_target = null
+
+func _on_entity_detector_area_entered(area: Area3D) -> void:
+	#var node:Node3D = area.get_parent()
+	if area.is_in_group("Enemy"):
+		nearby_enemies.append(area)
+
+func _on_entity_detector_area_exited(area: Area3D) -> void:
+	#var node:Node3D = area.get_parent()
+	if area.is_in_group("Enemy"):
+		nearby_enemies.erase(area)
+		area.entity_target = null
 
 func _check_nearby_enemies():
 	if nearby_enemies.is_empty():
@@ -225,5 +236,5 @@ func _check_nearby_enemies():
 	frame_counter_A += 1
 	if frame_counter_A % 4 == 0:
 		for enemy in nearby_enemies:
-			if enemy.target != self:
-				enemy.target = self
+			if enemy.entity_target != self:
+				enemy.entity_target = self

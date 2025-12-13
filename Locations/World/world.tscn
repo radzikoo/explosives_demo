@@ -9,8 +9,8 @@
 [ext_resource type="Script" uid="uid://cof74d32qgwi6" path="res://Scripts/WorldManager/chunk_manager.gd" id="9_vlley"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_k0juu"]
-vertices = PackedVector3Array(-78.34863, 0.5516691, -18.236328, -77.09863, 0.5516691, -17.986328, -76.84863, 0.5516691, -19.986328, -78.34863, 0.5516691, -54.23633, -39.598633, 0.5516691, -48.23633, -37.848633, 0.5516691, -48.48633, -38.098633, 0.5516691, -54.23633, -75.09863, 0.5516691, -19.986328, -74.84863, 0.5516691, -18.236328, -39.598633, 0.5516691, -18.486328, -17.848633, 0.5516691, -48.48633, -17.598633, 0.5516691, -54.23633, 0.9013672, 0.5516691, 8.513672, 1.1513672, 0.5516691, 10.513672, 3.4013672, 0.5516691, 10.513672, -16.098633, 0.5516691, -48.23633, -16.098633, 0.5516691, 8.013672, -6.098633, 0.5516691, 8.513672, 3.4013672, 0.5516691, -54.23633, -38.598633, 1.0516691, -47.48633, -38.598633, 1.0516691, 11.513672, -17.098633, 1.0516691, 11.513672, -17.098633, 1.0516691, -47.48633, -35.848633, 16.05167, 18.763672, -35.598633, 16.05167, 19.263672, -3.3486328, 16.05167, 19.263672, -3.3486328, 16.05167, -19.986328, -49.848633, 16.30167, -19.986328, -49.848633, 16.30167, 18.763672, -42.098633, 0.5516691, -7.736328, -41.348633, 0.5516691, -5.486328, -39.598633, 0.5516691, -5.486328, -61.098633, 0.5516691, -0.48632813, -43.598633, 0.5516691, -4.486328, -43.598633, 0.5516691, -7.736328, -74.59863, 0.5516691, 1.0136719, -62.848633, 0.5516691, 1.2636719, -62.848633, 0.5516691, -0.23632813, -78.34863, 0.5516691, 19.513672, -76.84863, 0.5516691, 19.513672, -61.348633, 17.05167, 19.763672, -61.598633, 17.05167, 0.5136719, -61.848633, 17.05167, 19.513672, -75.34863, 17.05167, 10.513672, -64.84863, 17.05167, 10.263672, -75.59863, 17.05167, 10.013672, -75.34863, 17.05167, 19.763672, -75.84863, 17.05167, 20.013672, -75.84863, 17.05167, -7.236328, -36.598633, 17.05167, 20.013672, -41.098633, 0.5516691, 5.263672, -40.848633, 0.5516691, 6.263672, -39.598633, 0.5516691, 6.263672, -41.598633, 0.5516691, -3.9863281, -43.348633, 0.5516691, -3.9863281, -44.348633, 0.5516691, 5.263672, -60.598633, 0.5516691, -0.23632813, -44.598633, 0.5516691, 6.263672, -60.598633, 0.5516691, 6.263672, 6.651367, -1.6983309, -1.4863281, 6.401367, -1.6983309, -2.2363281, 4.401367, -1.1983309, -2.2363281, 4.401367, -1.1983309, -0.23632813, 6.901367, -1.9483309, -0.23632813, 6.901367, -2.1983309, 0.7636719, 4.651367, -2.1983309, 0.7636719, 4.651367, -2.1983309, 11.263672, 13.651367, -2.1983309, 11.013672, 13.651367, -1.9483309, -1.4863281, -64.09863, 0.5516691, 9.263672, -63.848633, 0.5516691, 10.263672, -62.848633, 0.5516691, 10.263672, -74.59863, 0.5516691, 9.263672, -43.348633, 0.5516691, 8.513672, -42.598633, 0.5516691, 8.263672, -42.598633, 0.5516691, 7.513672, -44.348633, 0.5516691, 7.513672, -42.848633, 0.5516691, 18.513672, -60.598633, 0.5516691, 18.763672, -43.348633, 0.5516691, 11.763672, -42.848633, 0.5516691, 12.013672, -41.848633, 0.5516691, 8.513672, -41.098633, 0.5516691, 7.513672, -39.348633, 0.5516691, 12.513672, -41.848633, 0.5516691, 11.763672, -35.848633, 0.5516691, 18.763672, -18.348633, 0.5516691, 19.513672, -18.348633, 0.5516691, 12.513672, -35.598633, 0.5516691, 19.513672, -6.348633, 0.8016691, 11.513672, -0.09863281, 2.3016691, 11.513672, -0.09863281, 2.3016691, 9.513672, -6.348633, 0.8016691, 9.513672, -16.348633, 0.5516691, 12.513672, -6.348633, 0.5516691, 12.513672, -54.098633, 9.051669, 10.013672, -54.098633, 9.051669, 12.763672, -52.848633, 8.801669, 12.763672, -52.848633, 8.801669, 10.013672, -64.09863, 0.5516691, 11.513672, -62.848633, 0.5516691, 18.763672, -74.59863, 0.5516691, 11.513672, -74.59863, 0.5516691, 18.763672, 0.9013672, 0.5516691, 12.513672, 3.4013672, 0.5516691, 19.513672, -4.348633, 0.5516691, 19.513672, -4.348633, 0.5516691, 12.513672)
-polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Array(5, 4, 6), PackedInt32Array(6, 4, 3), PackedInt32Array(7, 3, 8), PackedInt32Array(8, 3, 4), PackedInt32Array(8, 4, 9), PackedInt32Array(7, 2, 3), PackedInt32Array(5, 6, 10), PackedInt32Array(10, 6, 11), PackedInt32Array(14, 13, 12), PackedInt32Array(15, 10, 11), PackedInt32Array(17, 16, 12), PackedInt32Array(12, 16, 15), PackedInt32Array(11, 18, 15), PackedInt32Array(15, 18, 12), PackedInt32Array(12, 18, 14), PackedInt32Array(22, 21, 19), PackedInt32Array(19, 21, 20), PackedInt32Array(24, 23, 25), PackedInt32Array(25, 23, 26), PackedInt32Array(26, 23, 27), PackedInt32Array(23, 28, 27), PackedInt32Array(30, 29, 31), PackedInt32Array(31, 29, 9), PackedInt32Array(34, 33, 32), PackedInt32Array(9, 29, 34), PackedInt32Array(37, 36, 35), PackedInt32Array(37, 35, 32), PackedInt32Array(32, 35, 8), PackedInt32Array(32, 8, 34), PackedInt32Array(34, 8, 9), PackedInt32Array(39, 38, 1), PackedInt32Array(1, 38, 0), PackedInt32Array(41, 40, 42), PackedInt32Array(45, 44, 43), PackedInt32Array(46, 47, 43), PackedInt32Array(43, 47, 45), PackedInt32Array(47, 48, 45), PackedInt32Array(46, 40, 47), PackedInt32Array(47, 40, 49), PackedInt32Array(46, 42, 40), PackedInt32Array(51, 50, 52), PackedInt32Array(52, 50, 53), PackedInt32Array(52, 53, 30), PackedInt32Array(52, 30, 31), PackedInt32Array(53, 50, 54), PackedInt32Array(54, 50, 55), PackedInt32Array(54, 55, 33), PackedInt32Array(33, 55, 57), PackedInt32Array(33, 57, 56), PackedInt32Array(33, 56, 32), PackedInt32Array(57, 58, 56), PackedInt32Array(59, 63, 60), PackedInt32Array(60, 63, 61), PackedInt32Array(61, 63, 62), PackedInt32Array(66, 65, 64), PackedInt32Array(68, 67, 64), PackedInt32Array(64, 67, 66), PackedInt32Array(63, 59, 68), PackedInt32Array(64, 63, 68), PackedInt32Array(70, 69, 71), PackedInt32Array(71, 69, 36), PackedInt32Array(72, 35, 69), PackedInt32Array(69, 35, 36), PackedInt32Array(74, 73, 75), PackedInt32Array(75, 73, 76), PackedInt32Array(76, 77, 57), PackedInt32Array(57, 77, 58), PackedInt32Array(58, 77, 78), PackedInt32Array(76, 73, 79), PackedInt32Array(79, 80, 77), PackedInt32Array(76, 79, 77), PackedInt32Array(74, 75, 81), PackedInt32Array(81, 75, 82), PackedInt32Array(84, 83, 80), PackedInt32Array(80, 83, 77), PackedInt32Array(77, 83, 85), PackedInt32Array(82, 51, 52), PackedInt32Array(82, 52, 81), PackedInt32Array(81, 52, 84), PackedInt32Array(84, 52, 83), PackedInt32Array(86, 85, 87), PackedInt32Array(87, 85, 83), PackedInt32Array(86, 88, 85), PackedInt32Array(92, 91, 89), PackedInt32Array(89, 91, 90), PackedInt32Array(92, 89, 16), PackedInt32Array(16, 89, 93), PackedInt32Array(16, 17, 92), PackedInt32Array(89, 94, 93), PackedInt32Array(98, 97, 95), PackedInt32Array(95, 97, 96), PackedInt32Array(70, 71, 99), PackedInt32Array(99, 71, 100), PackedInt32Array(101, 99, 102), PackedInt32Array(102, 99, 100), PackedInt32Array(13, 14, 103), PackedInt32Array(103, 14, 104), PackedInt32Array(106, 103, 105), PackedInt32Array(105, 103, 104), PackedInt32Array(94, 106, 105), PackedInt32Array(86, 87, 93), PackedInt32Array(93, 94, 86), PackedInt32Array(86, 94, 105)]
+vertices = PackedVector3Array(-78.34863, 0.5516691, -18.214844, -77.09863, 0.5516691, -17.964844, -76.84863, 0.5516691, -19.964844, -78.34863, 0.5516691, -83.71484, -42.098633, 0.5516691, -7.7148438, -41.348633, 0.5516691, -5.4648438, -39.598633, 0.5516691, -5.4648438, -39.348633, 0.5516691, -8.214844, -74.84863, 0.5516691, -19.714844, -16.348633, 0.5516691, -8.214844, -43.598633, 0.5516691, -7.7148438, -74.59863, 0.5516691, 0.78515625, -62.848633, 0.5516691, 1.0351563, -62.848633, 0.5516691, -0.46484375, -61.098633, 0.5516691, -0.71484375, -43.598633, 0.5516691, -4.4648438, 3.4013672, 0.5516691, -5.9648438, 3.4013672, 0.5516691, -83.71484, -16.098633, 0.5516691, -5.9648438, -35.848633, 16.05167, 18.785156, -35.598633, 16.05167, 19.285156, -3.3486328, 16.05167, 19.285156, -3.3486328, 16.05167, -19.964844, -49.848633, 16.30167, -19.964844, -49.848633, 16.30167, 18.785156, -78.34863, 0.5516691, 19.535156, -76.84863, 0.5516691, 19.535156, -61.348633, 17.05167, 19.785156, -61.598633, 17.05167, 0.28515625, -61.848633, 17.05167, 19.535156, -75.34863, 17.05167, 10.535156, -64.84863, 17.05167, 10.285156, -75.59863, 17.05167, 10.035156, -75.34863, 17.05167, 19.785156, -75.84863, 17.05167, 20.035156, -75.84863, 17.05167, -7.2148438, -36.598633, 17.05167, 20.035156, -38.598633, 1.0516691, -7.2148438, -38.598633, 1.0516691, 11.535156, -17.098633, 1.0516691, 11.535156, -17.098633, 1.0516691, -7.2148438, 0.9013672, 0.5516691, 8.535156, 1.1513672, 0.5516691, 10.535156, 3.4013672, 0.5516691, 10.535156, -16.098633, 0.5516691, 8.035156, -6.098633, 0.5516691, 8.535156, -41.098633, 0.5516691, 5.2851563, -40.848633, 0.5516691, 6.2851563, -39.598633, 0.5516691, 6.2851563, -41.598633, 0.5516691, -3.9648438, -43.348633, 0.5516691, -3.9648438, -44.348633, 0.5516691, 5.2851563, -60.598633, 0.5516691, -0.46484375, -44.598633, 0.5516691, 6.2851563, -60.598633, 0.5516691, 6.2851563, 6.651367, -1.6983309, -1.4648438, 6.401367, -1.6983309, -2.2148438, 4.401367, -1.1983309, -2.2148438, 4.401367, -1.1983309, -0.21484375, 6.901367, -1.9483309, -0.21484375, 6.901367, -2.1983309, 0.78515625, 4.651367, -2.1983309, 0.78515625, 4.651367, -2.1983309, 11.285156, 13.651367, -2.1983309, 11.035156, 13.651367, -1.9483309, -1.4648438, -64.09863, 0.5516691, 9.285156, -63.848633, 0.5516691, 10.285156, -62.848633, 0.5516691, 10.285156, -74.59863, 0.5516691, 9.285156, -43.348633, 0.5516691, 8.535156, -42.598633, 0.5516691, 8.285156, -42.598633, 0.5516691, 7.5351563, -44.348633, 0.5516691, 7.5351563, -42.848633, 0.5516691, 18.535156, -60.598633, 0.5516691, 18.785156, -43.348633, 0.5516691, 11.785156, -42.848633, 0.5516691, 12.035156, -41.848633, 0.5516691, 8.535156, -41.098633, 0.5516691, 7.5351563, -39.348633, 0.5516691, 12.535156, -41.848633, 0.5516691, 11.785156, -35.848633, 0.5516691, 18.785156, -18.348633, 0.5516691, 19.535156, -18.348633, 0.5516691, 12.535156, -35.598633, 0.5516691, 19.535156, -6.348633, 0.8016691, 11.535156, -0.09863281, 2.3016691, 11.535156, -0.09863281, 2.3016691, 9.535156, -6.348633, 0.8016691, 9.535156, -16.348633, 0.5516691, 12.535156, -6.348633, 0.5516691, 12.535156, -54.098633, 9.051669, 10.035156, -54.098633, 9.051669, 12.785156, -52.848633, 8.801669, 12.785156, -52.848633, 8.801669, 10.035156, -64.09863, 0.5516691, 11.535156, -62.848633, 0.5516691, 18.785156, -74.59863, 0.5516691, 11.535156, -74.59863, 0.5516691, 18.785156, 0.9013672, 0.5516691, 12.535156, 3.4013672, 0.5516691, 19.535156, -4.348633, 0.5516691, 19.535156, -4.348633, 0.5516691, 12.535156)
+polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Array(5, 4, 6), PackedInt32Array(6, 4, 7), PackedInt32Array(9, 7, 8), PackedInt32Array(4, 10, 7), PackedInt32Array(7, 10, 8), PackedInt32Array(13, 12, 11), PackedInt32Array(13, 11, 14), PackedInt32Array(14, 11, 8), PackedInt32Array(14, 8, 10), PackedInt32Array(14, 10, 15), PackedInt32Array(9, 8, 16), PackedInt32Array(16, 8, 3), PackedInt32Array(16, 3, 17), PackedInt32Array(9, 16, 18), PackedInt32Array(8, 2, 3), PackedInt32Array(20, 19, 21), PackedInt32Array(21, 19, 22), PackedInt32Array(22, 19, 23), PackedInt32Array(19, 24, 23), PackedInt32Array(26, 25, 1), PackedInt32Array(1, 25, 0), PackedInt32Array(29, 28, 27), PackedInt32Array(32, 31, 30), PackedInt32Array(33, 34, 30), PackedInt32Array(30, 34, 32), PackedInt32Array(34, 35, 32), PackedInt32Array(33, 27, 34), PackedInt32Array(34, 27, 36), PackedInt32Array(33, 29, 27), PackedInt32Array(40, 39, 37), PackedInt32Array(37, 39, 38), PackedInt32Array(42, 41, 43), PackedInt32Array(43, 41, 16), PackedInt32Array(45, 44, 41), PackedInt32Array(41, 44, 18), PackedInt32Array(41, 18, 16), PackedInt32Array(47, 46, 48), PackedInt32Array(48, 46, 49), PackedInt32Array(48, 49, 5), PackedInt32Array(48, 5, 6), PackedInt32Array(49, 46, 50), PackedInt32Array(50, 46, 51), PackedInt32Array(50, 51, 15), PackedInt32Array(15, 51, 53), PackedInt32Array(15, 53, 52), PackedInt32Array(15, 52, 14), PackedInt32Array(53, 54, 52), PackedInt32Array(55, 59, 56), PackedInt32Array(56, 59, 57), PackedInt32Array(57, 59, 58), PackedInt32Array(62, 61, 60), PackedInt32Array(64, 63, 60), PackedInt32Array(60, 63, 62), PackedInt32Array(59, 55, 64), PackedInt32Array(60, 59, 64), PackedInt32Array(66, 65, 67), PackedInt32Array(67, 65, 12), PackedInt32Array(68, 11, 65), PackedInt32Array(65, 11, 12), PackedInt32Array(70, 69, 71), PackedInt32Array(71, 69, 72), PackedInt32Array(72, 73, 53), PackedInt32Array(53, 73, 54), PackedInt32Array(54, 73, 74), PackedInt32Array(72, 69, 75), PackedInt32Array(75, 76, 73), PackedInt32Array(72, 75, 73), PackedInt32Array(70, 71, 77), PackedInt32Array(77, 71, 78), PackedInt32Array(80, 79, 76), PackedInt32Array(76, 79, 73), PackedInt32Array(73, 79, 81), PackedInt32Array(78, 47, 48), PackedInt32Array(78, 48, 77), PackedInt32Array(77, 48, 80), PackedInt32Array(80, 48, 79), PackedInt32Array(82, 81, 83), PackedInt32Array(83, 81, 79), PackedInt32Array(82, 84, 81), PackedInt32Array(88, 87, 85), PackedInt32Array(85, 87, 86), PackedInt32Array(88, 85, 44), PackedInt32Array(44, 85, 89), PackedInt32Array(44, 45, 88), PackedInt32Array(85, 90, 89), PackedInt32Array(94, 93, 91), PackedInt32Array(91, 93, 92), PackedInt32Array(66, 67, 95), PackedInt32Array(95, 67, 96), PackedInt32Array(97, 95, 98), PackedInt32Array(98, 95, 96), PackedInt32Array(42, 43, 99), PackedInt32Array(99, 43, 100), PackedInt32Array(102, 99, 101), PackedInt32Array(101, 99, 100), PackedInt32Array(90, 102, 101), PackedInt32Array(82, 83, 89), PackedInt32Array(89, 90, 82), PackedInt32Array(82, 90, 101)]
 agent_height = 2.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qfnet"]
@@ -92,10 +92,10 @@ transform = Transform3D(1, 0, 0, 0, 0.681935, 0.731413, 0, -0.731413, 0.681935, 
 navigation_mesh = SubResource("NavigationMesh_k0juu")
 
 [node name="Ground" type="CSGBox3D" parent="NavigationRegion3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.548706, 0, -17.368164)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.548706, 0, -32.10742)
 material_override = SubResource("StandardMaterial3D_qfnet")
 use_collision = true
-size = Vector3(82.59985, 0.3, 74.73633)
+size = Vector3(82.59985, 0.3, 104.21484)
 material = SubResource("StandardMaterial3D_71j4m")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D"]
@@ -159,9 +159,9 @@ use_collision = true
 size = Vector3(2.1487885, 0.1171875, 3.515625)
 
 [node name="CSGBox3D12" type="CSGBox3D" parent="NavigationRegion3D" groups=["Terrain"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.917, 0.4, -18.04)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.917, 0.4, 2.151083)
 use_collision = true
-size = Vector3(22.204, 0.5, 59.747)
+size = Vector3(22.204, 0.5, 19.364834)
 
 [node name="CSGBox3D13" type="CSGBox3D" parent="NavigationRegion3D" groups=["Terrain"]]
 transform = Transform3D(0.97684807, -0.2139341, 0, 0.2139341, 0.97684807, 0, 0, 0, 1, -3.8287044, 0.74994105, 10.489805)
@@ -325,7 +325,7 @@ visible = false
 visible = false
 
 [node name="Enemy" parent="enemies_v1" instance=ExtResource("5_m4ob5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.795965, 1.3625443, -21.088696)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.795965, 1.3625443, -18.718742)
 
 [node name="Enemy2" parent="enemies_v1" instance=ExtResource("5_m4ob5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.795965, 1.3625443, -18.300743)
@@ -453,6 +453,1764 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.333349, 1.3625443, -6.736
 [node name="enemies_v2" type="Node3D" parent="."]
 
 [node name="Enemy" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.11334, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy2" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy3" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy4" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy5" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy6" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy7" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy8" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy9" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy10" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy11" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy12" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy13" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy14" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy15" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy16" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy17" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy18" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy19" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy20" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy21" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy22" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy23" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy24" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy25" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy26" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy27" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy28" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy29" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy30" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy31" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy32" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy33" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy34" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy35" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy36" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy37" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy38" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy39" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy40" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy41" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy42" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy43" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy44" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy45" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy46" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy47" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy48" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy49" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy50" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy51" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy52" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy53" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy54" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy55" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy56" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy57" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy58" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy59" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy60" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy61" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy62" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy63" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy64" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy65" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy66" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy67" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy68" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy69" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy70" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy71" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy72" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy73" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy74" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy75" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy76" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy77" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy78" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy79" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy80" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy81" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy82" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy83" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy84" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy85" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.081406, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy86" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy87" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy88" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy89" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy90" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy91" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy92" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy93" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy94" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy95" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy96" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy97" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy98" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy99" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy100" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy253" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.11334, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy254" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy255" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy256" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy257" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy258" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy259" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy260" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy261" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy262" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy263" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy264" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy265" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy266" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy267" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy268" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy269" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy270" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy271" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy272" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy273" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy274" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy275" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy276" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy277" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy278" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy279" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy280" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy281" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy282" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy283" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy284" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy285" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy286" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy287" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy288" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy289" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy290" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy291" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy292" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy293" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy294" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy295" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy296" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy297" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy298" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy299" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy300" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy301" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy302" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy303" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy304" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy305" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy306" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy307" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy308" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy309" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy310" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy311" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy312" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy313" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy314" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy315" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy316" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy317" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy318" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy319" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy320" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy321" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy322" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy323" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy324" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy325" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy326" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy327" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy328" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy329" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy330" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy331" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy332" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy333" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy334" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy335" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy336" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.147415, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy337" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.081406, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy338" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy339" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy340" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy341" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy342" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy343" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy344" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy345" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy346" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy347" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy348" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy349" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy350" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy351" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy352" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy101" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy102" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy103" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy104" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy105" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy106" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy107" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy108" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy109" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy110" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy111" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy112" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy113" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy114" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy115" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy116" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy117" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy118" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy119" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy120" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy121" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy122" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy123" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy124" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy125" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy126" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy127" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy128" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy129" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy130" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy131" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy132" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy133" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy134" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy135" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy136" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy137" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy138" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy139" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy140" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy141" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy142" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy143" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy144" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy145" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy146" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy147" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy148" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy149" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy150" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy151" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy152" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy153" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy154" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy155" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy156" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy157" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy158" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy159" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy160" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy161" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy162" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy163" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy164" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy165" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy166" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy167" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy168" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.20660073, -42.4179)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy169" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.081406, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy170" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy171" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy172" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy173" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy174" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy175" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy176" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy177" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy178" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy179" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy180" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy181" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy182" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy183" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy184" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy185" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy186" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy187" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy188" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy189" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy190" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy191" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy192" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy193" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy194" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy195" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy196" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy197" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy198" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy199" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy200" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy201" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy202" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy203" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy204" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy205" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy206" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy207" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy208" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy209" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy210" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy211" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy212" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy213" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy214" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy215" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy216" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy217" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy218" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy219" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy220" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy221" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy222" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy223" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy224" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy225" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy226" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy227" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy228" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy229" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy230" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy231" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy232" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy233" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy234" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy235" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy236" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy237" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy238" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy239" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy240" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy241" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy242" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy243" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy244" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy245" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy246" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy247" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy248" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy249" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy250" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy251" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
+
+[node name="Enemy252" parent="enemies_v2" instance=ExtResource("7_rpyd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.115484, 0.9042888, -47.056004)
+entity_active = true
+entity_speed = 1.5
 
 [connection signal="pressed" from="ChunkManager/TileController/VBoxContainer/PlaceTile" to="ChunkManager" method="_on_place_tile_pressed"]
 [connection signal="pressed" from="ChunkManager/TileController/VBoxContainer/DestTile" to="ChunkManager" method="_on_dest_tile_pressed"]
