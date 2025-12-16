@@ -1,0 +1,26 @@
+extends CollisionShape3D
+##3D area whose boundaries define where entity can be spawned.
+class_name EntitySpawner
+
+@export var autostart:bool = false
+@export var entity_scene:PackedScene
+@export var entity_amount:int
+@export var endless:bool = false
+@export var time_delay:float
+
+func _ready() -> void:
+	if entity_scene == null:
+		print_debug("No entity scene path is provided!")
+	else:
+		if autostart:
+			summon_entities()
+
+func summon_entities():
+	for n in entity_amount:
+		var inst = entity_scene.instantiate()
+		get_parent().call_deferred("add_child", inst)
+		inst.global_position = Vector3(
+			randi_range(global_position.x-(shape.size.x/2),global_position.x+(shape.size.x/2)),
+			0.5,
+			randi_range(global_position.z-(shape.size.z/2),global_position.z+(shape.size.z/2)),
+		)

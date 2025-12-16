@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dx8s14wxrruld"]
+
+[ext_resource type="Script" uid="uid://cb8q0csechrxq" path="res://Scripts/EntitySpawner/entity_spawner.gd" id="1_8wyim"]
+
+[node name="EntitySpawner" type="CollisionShape3D"]
+disabled = true
+script = ExtResource("1_8wyim")

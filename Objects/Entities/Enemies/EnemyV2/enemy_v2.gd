@@ -1,9 +1,10 @@
-extends StaticBody3D
+extends Node3D
 #class_name Enemy
 
 #Nodes
-@onready var raycast: RayCast3D = $RayCast3D
+#@onready var raycast: RayCast3D = $RayCast3D
 @onready var agent: NavigationAgent3D = $NavigationAgent3D
+#var animplayer: AnimationPlayer
 #@onready var player := %Player
 
 #Entity properties
@@ -30,6 +31,9 @@ func _physics_process(delta: float) -> void: #moze zmienic na zwykly process
 		#_handle_state()
 		_handle_target()
 		_handle_movement(delta)
+		#for child in get_children():
+			#if child is AnimationPlayer:
+				#animplayer = child
 
 func _init_entity():
 	await NavigationServer3D.map_changed
@@ -77,6 +81,8 @@ func _handle_movement(delta: float):
 
 			global_position += velocity * delta
 			agent.set_velocity(velocity)
+			#$AnimationPlayer.play("anim_default")
+			#if animplayer: animplayer.play("anim_default")
 			
 			look_time_passed += delta
 			if look_time_passed >= 0.1:
@@ -112,6 +118,8 @@ func _handle_movement(delta: float):
 
 				global_position += velocity * delta
 				agent.set_velocity(velocity)
+				#$AnimationPlayer.play("anim_default")
+				#if animplayer: animplayer.play("anim_default")
 			else:
 				can_get_rand_pos = true
 				_get_random_pos()

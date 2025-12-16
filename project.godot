@@ -29,6 +29,10 @@ window/vsync/vsync_mode=0
 
 project/assembly_name="explosives_demo"
 
+[editor]
+
+movie_writer/movie_file="D:/Godot Games/explosives_demo/ee.avi"
+
 [global_group]
 
 Enemy=""
