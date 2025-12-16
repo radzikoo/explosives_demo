@@ -4,7 +4,7 @@ extends Node3D
 #Nodes
 #@onready var raycast: RayCast3D = $RayCast3D
 @onready var agent: NavigationAgent3D = $NavigationAgent3D
-#var animplayer: AnimationPlayer
+var animplayer: AnimationPlayer
 #@onready var player := %Player
 
 #Entity properties
@@ -31,14 +31,15 @@ func _physics_process(delta: float) -> void: #moze zmienic na zwykly process
 		#_handle_state()
 		_handle_target()
 		_handle_movement(delta)
-		#for child in get_children():
-			#if child is AnimationPlayer:
-				#animplayer = child
 
 func _init_entity():
+	for child in get_children():
+		if child is AnimationPlayer:
+			animplayer = child
 	await NavigationServer3D.map_changed
 	agent.set_navigation_map(agent.get_navigation_map())
 	_get_random_pos()
+
 
 func _get_random_pos():
 	var posx = randi_range(-5,5)
@@ -81,8 +82,9 @@ func _handle_movement(delta: float):
 
 			global_position += velocity * delta
 			agent.set_velocity(velocity)
-			#$AnimationPlayer.play("anim_default")
-			#if animplayer: animplayer.play("anim_default")
+			#if animplayer:
+				#if animplayer.current_animation != "animation_Crab_scuttle":
+					#animplayer.play("animation_Crab_scuttle")
 			
 			look_time_passed += delta
 			if look_time_passed >= 0.1:
@@ -99,7 +101,7 @@ func _handle_movement(delta: float):
 			if random_pos == Vector3.ZERO:
 				can_get_rand_pos = true
 				_get_random_pos()
-			
+
 			if self.global_position.distance_to(random_pos) >= 1.5:
 				wander_time_passed += delta
 				if wander_time_passed >= 0.5:
@@ -118,12 +120,13 @@ func _handle_movement(delta: float):
 
 				global_position += velocity * delta
 				agent.set_velocity(velocity)
-				#$AnimationPlayer.play("anim_default")
-				#if animplayer: animplayer.play("anim_default")
+				#if animplayer:
+					#if animplayer.current_animation != "animation_Crab_scuttle":
+						#animplayer.play("animation_Crab_scuttle")
 			else:
 				can_get_rand_pos = true
 				_get_random_pos()
-			
+
 		Misc.entity_state.ATTACKING:
 			pass
-			print("ATTACKING on ", name)
+			# print("ATTACKING on ", name)
