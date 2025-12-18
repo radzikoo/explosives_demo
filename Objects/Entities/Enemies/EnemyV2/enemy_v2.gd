@@ -1,5 +1,5 @@
+
 extends Node3D
-#class_name Enemy
 
 #Nodes
 #@onready var raycast: RayCast3D = $RayCast3D
@@ -11,7 +11,7 @@ var animplayer: AnimationPlayer
 @export var entity_active:bool = false
 @export var entity_speed:float
 @onready var entity_target #= %Player
-var entity_state:Misc.entity_state = Misc.entity_state.RUN_ATTACK
+var entity_state:Misc.entity_state = Misc.entity_state.WANDER
 
 #Navigation realted things
 @onready var navmap := agent.get_navigation_map()
@@ -21,7 +21,14 @@ var can_get_rand_pos:bool
 var navupdate_time_passed:float
 var look_time_passed:float
 var wander_time_passed:float
-var result:Dictionary #Player-Entity raycast detection
+var next_pos:Vector3
+
+#Player-Entity raycast detection
+@export var raycast_height:float
+var result:Dictionary
+var query:PhysicsRayQueryParameters3D
+var target_pos:Vector3
+var my_pos:Vector3
 
 func _ready() -> void:
 	_init_entity()
@@ -49,15 +56,33 @@ func _get_random_pos():
 	can_get_rand_pos = false
 	#print(random_pos)
 
+func _update_rotation():
+	if next_pos:
+		if self.global_position.distance_to(next_pos) >= 0.05:
+			look_at(
+			Vector3(next_pos.x,
+			global_position.y,
+			next_pos.z), Vector3.UP, true)
+	#else:
+		#look_at(
+		#Vector3(random_pos.x,
+		#global_position.y,
+		#random_pos.z), Vector3.UP, true)
+
 func _handle_target():
 	if entity_target:
-		#print(self.global_position.distance_to(entity_target.global_position))
-		if self.global_position.distance_to(entity_target.global_position) <= 1.5:
-			if entity_state != Misc.entity_state.ATTACKING:
-				entity_state = Misc.entity_state.ATTACKING
-		else:
-			if entity_state != Misc.entity_state.RUN_ATTACK:
-				entity_state = Misc.entity_state.RUN_ATTACK
+		target_pos = Vector3(entity_target.global_position.x, entity_target.global_position.y + raycast_height, entity_target.global_position.z)
+		my_pos = Vector3(self.global_position.x, self.global_position.y + raycast_height, self.global_position.z)
+		query = PhysicsRayQueryParameters3D.create(my_pos, target_pos)
+		query.exclude = [self]
+		result = space_state.intersect_ray(query)
+		if result.has("collider") and result["collider"] == entity_target:
+			if self.global_position.distance_to(entity_target.global_position) <= 1.5:
+				if entity_state != Misc.entity_state.ATTACKING:
+					entity_state = Misc.entity_state.ATTACKING
+			else:
+				if entity_state != Misc.entity_state.RUN_ATTACK:
+					entity_state = Misc.entity_state.RUN_ATTACK
 	else:
 		if entity_state != Misc.entity_state.WANDER:
 			entity_state = Misc.entity_state.WANDER
@@ -69,22 +94,17 @@ func _handle_movement(delta: float):
 			print("IDLE on ", name)
 
 		Misc.entity_state.RUN_ATTACK:
-			#print("RUN_ATTACK on ", name)
 			navupdate_time_passed += delta
 			if navupdate_time_passed >= 0.5:
 				navupdate_time_passed = 0.0
 				agent.set_target_position(entity_target.global_transform.origin)
-				#print("Navigation updated")
 
-			var next_pos = agent.get_next_path_position()
+			next_pos = agent.get_next_path_position()
 			var dir = (next_pos - global_position).normalized()
 			var velocity = dir * entity_speed
 
 			global_position += velocity * delta
 			agent.set_velocity(velocity)
-			#if animplayer:
-				#if animplayer.current_animation != "animation_Crab_scuttle":
-					#animplayer.play("animation_Crab_scuttle")
 			
 			look_time_passed += delta
 			if look_time_passed >= 0.1:
@@ -95,38 +115,34 @@ func _handle_movement(delta: float):
 				entity_target.global_position.z), Vector3.UP, true)
 
 		Misc.entity_state.WANDER:
-			#Problem jest taki, ze npc gdy znajdzie pozycje poza ktora jest wyzsza/nizsza to nie moze
-			#tam wejsc i sie blokuje
-			#print("WANDER on ", name)
 			if random_pos == Vector3.ZERO:
 				can_get_rand_pos = true
 				_get_random_pos()
-
-			if self.global_position.distance_to(random_pos) >= 1.5:
+			
+			if self.global_position.distance_to(random_pos) >= 0.5:
+				agent.set_target_position(random_pos)
 				wander_time_passed += delta
 				if wander_time_passed >= 0.5:
 					wander_time_passed = 0.0
-					agent.set_target_position(random_pos)
-					
-					look_at(
-					Vector3(random_pos.x,
-					global_position.y,
-					random_pos.z), Vector3.UP, true)
-					#print("Navigation updated")
-				
-				var next_pos = agent.get_next_path_position()
-				var dir = (next_pos - global_position).normalized()
-				var velocity = dir * entity_speed
+					#agent.set_target_position(random_pos)
+					#_update_rotation()
+						
+				if agent.is_target_reachable():
+					next_pos = agent.get_next_path_position()
+					var dir = (next_pos - global_transform.origin).normalized()
+					var velocity = dir * entity_speed
+					_update_rotation()
 
-				global_position += velocity * delta
-				agent.set_velocity(velocity)
-				#if animplayer:
-					#if animplayer.current_animation != "animation_Crab_scuttle":
-						#animplayer.play("animation_Crab_scuttle")
+					global_position += velocity * delta
+					agent.set_velocity(velocity)
+				else:
+					can_get_rand_pos = true
+					_get_random_pos()
+					agent.set_target_position(random_pos)
+					#_update_rotation()
 			else:
 				can_get_rand_pos = true
 				_get_random_pos()
 
 		Misc.entity_state.ATTACKING:
 			pass
-			# print("ATTACKING on ", name)

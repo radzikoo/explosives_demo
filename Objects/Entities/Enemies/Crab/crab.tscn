@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bl2heekvkvj0k" path="res://Objects/Entities/Enemies/Crab/hermit_0.png" id="2_f20pp"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8rjnm"]
-size = Vector3(0.31628418, 0.36279297, 0.4281006)
+size = Vector3(0.316, 0.375, 0.428)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yx2yd"]
 resource_name = "material_0"
@@ -340,15 +340,17 @@ _data = {
 &"animation_Crab_scuttle": SubResource("Animation_4w3xj")
 }
 
-[node name="Crab" type="StaticBody3D" groups=["Enemy"]]
+[node name="Crab" type="Area3D" groups=["Enemy"]]
 script = ExtResource("1_pqynj")
 entity_active = true
 entity_speed = 1.2
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_height_offset = 0.4
+debug_enabled = true
 
 [node name="Hitbox" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02935791, 0.18237305, 0.082214355)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.029, 0.187, 0.082)
 shape = SubResource("BoxShape3D_8rjnm")
 
 [node name="Organism" type="Node3D" parent="."]

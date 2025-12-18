@@ -1,3 +1,4 @@
+@icon("res://Scripts/EntitySpawner/class.png")
 extends CollisionShape3D
 ##3D area whose boundaries define where entity can be spawned.
 class_name EntitySpawner
@@ -7,6 +8,7 @@ class_name EntitySpawner
 @export var entity_amount:int
 @export var endless:bool = false
 @export var time_delay:float
+@export var spawn_y:float
 
 func _ready() -> void:
 	if entity_scene == null:
@@ -21,6 +23,6 @@ func summon_entities():
 		get_parent().call_deferred("add_child", inst)
 		inst.global_position = Vector3(
 			randi_range(global_position.x-(shape.size.x/2),global_position.x+(shape.size.x/2)),
-			0.5,
+			spawn_y,
 			randi_range(global_position.z-(shape.size.z/2),global_position.z+(shape.size.z/2)),
 		)
