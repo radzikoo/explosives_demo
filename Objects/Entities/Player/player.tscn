@@ -15,7 +15,7 @@ size = Vector3(0.7, 1.8, 0.7)
 shader = ExtResource("3_rwkt4")
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_q3yuq"]
-height = 4.6625977
+height = 8.624268
 radius = 7.263
 
 [node name="Player" type="CharacterBody3D"]
@@ -161,11 +161,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.15, 0)
 target_position = Vector3(0, 0, -0.6)
 
 [node name="EntityDetector" type="Area3D" parent="."]
-monitoring = false
-monitorable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EntityDetector"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3312988, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35046387, 0)
 shape = SubResource("CylinderShape3D_q3yuq")
 
 [connection signal="body_entered" from="DamageArea" to="." method="_on_damage_area_body_entered"]

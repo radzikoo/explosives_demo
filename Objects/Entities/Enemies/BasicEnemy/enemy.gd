@@ -65,6 +65,10 @@ func _handle_movement(delta):
 				a_time = a_wait_time
 			
 		Misc.entity_state.WANDER:
+			if rand_pos == Vector3.ZERO:
+				can_get_rand_pos = true
+				get_rand_pos()
+			
 			if global_position.distance_to(rand_pos) > 1.5:
 				#print(global_position.distance_to(rand_pos))
 				#print("asd")

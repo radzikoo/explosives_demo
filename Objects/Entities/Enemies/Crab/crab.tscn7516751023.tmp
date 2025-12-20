@@ -1,48 +1,9 @@
-[gd_scene load_steps=26 format=4 uid="uid://bx00t0ep7871t"]
+[gd_scene load_steps=25 format=4 uid="uid://bx00t0ep7871t"]
 
 [ext_resource type="Script" uid="uid://c180q7qstp0ev" path="res://Objects/Entities/Enemies/EnemyV2/enemy_v2.gd" id="1_pqynj"]
 [ext_resource type="Texture2D" uid="uid://bl2heekvkvj0k" path="res://Objects/Entities/Enemies/Crab/hermit_0.png" id="2_f20pp"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8rjnm"]
-size = Vector3(0.316, 0.375, 0.428)
-
-[sub_resource type="Animation" id="Animation_4w3xj"]
-resource_name = "animation_Crab_scuttle"
-tracks/0/type = "rotation_3d"
-tracks/0/imported = true
-tracks/0/enabled = true
-tracks/0/path = NodePath("Organism")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.23333333, 1, 0, 0.08135868, 0, 0.9966849, 0.26666668, 1, 0, 0.08135867, 0, 0.9966849, 0.46666667, 1, 0, 0.011635268, 0, 0.9999324, 0.5, 1, 0, 0, 0, 1, 0.73333335, 1, 0, -0.081358686, 0, 0.9966849, 0.76666665, 1, 0, -0.081358686, 0, 0.99668497, 0.96666664, 1, 0, -0.0116352765, 0, 0.99993235, 1, 1, 0, 0, 0, 1)
-tracks/1/type = "position_3d"
-tracks/1/imported = true
-tracks/1/enabled = true
-tracks/1/path = NodePath("Organism/Legs")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.23333333, 1, 0, 0.029166667, 0, 0.26666668, 1, 0, 0.029166665, 0, 0.53333336, 1, 0, 0.00416667, 0, 0.73333335, 1, 0, 0.029166669, 0, 0.76666665, 1, 0, 0.029166669, 0, 1, 1, 0, 0, 0)
-tracks/2/type = "rotation_3d"
-tracks/2/imported = true
-tracks/2/enabled = true
-tracks/2/path = NodePath("Organism/Legs")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.16666667, 1, -0.06526309, -0.06526309, -0.0042775692, 0.9957224, 0.2, 1, -0.034788765, -0.052297052, -0.0034277302, 0.9980196, 0.23333333, 1, -0.0042760666, -0.03927334, -0.0025741109, 0.9992161, 0.26666668, 1, 0.026241353, -0.026206313, -0.0017176524, 0.9993106, 0.3, 1, 0.05672983, -0.013110386, -0.00085930014, 0.9983032, 0.33333334, 1, 0.087155744, 0, 0, 0.9961948, 0.46666667, 1, 0.017452408, 0, 0, 0.99984777, 0.5, 1, 0, 0, 0, 1, 0.6666667, 1, -0.06526309, 0.06526309, 0.0042775692, 0.9957224, 0.7, 1, -0.034788784, 0.05229706, 0.0034277306, 0.9980196, 0.73333335, 1, -0.0042760517, 0.039273333, 0.0025741102, 0.9992161, 0.76666665, 1, 0.026241334, 0.026206316, 0.0017176528, 0.9993106, 0.8, 1, 0.056729846, 0.013110377, 0.0008592995, 0.9983032, 0.8333333, 1, 0.087155744, 0, 0, 0.9961948, 0.96666664, 1, 0.017452423, 0, 0, 0.99984777, 1, 1, 0, 0, 0, 1)
-tracks/3/type = "position_3d"
-tracks/3/imported = true
-tracks/3/enabled = true
-tracks/3/path = NodePath("Main")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.23333333, 1, 0, 0.0175, 0, 0.26666668, 1, 0, 0.0175, 0, 0.53333336, 1, 0, 0.0025000023, 0, 0.73333335, 1, 0, 0.017500002, 0, 0.76666665, 1, 0, 0.017500002, 0, 1, 1, 0, 0, 0)
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_o0bnu"]
-_data = {
-&"animation_Crab_scuttle": SubResource("Animation_4w3xj")
-}
-
-[sub_resource type="BoxMesh" id="BoxMesh_pqynj"]
 size = Vector3(0.316, 0.375, 0.428)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yx2yd"]
@@ -343,31 +304,54 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_gnr4u")
 
+[sub_resource type="Animation" id="Animation_4w3xj"]
+resource_name = "animation_Crab_scuttle"
+tracks/0/type = "rotation_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("Organism")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.23333333, 1, 0, 0.08135868, 0, 0.9966849, 0.26666668, 1, 0, 0.08135867, 0, 0.9966849, 0.46666667, 1, 0, 0.011635268, 0, 0.9999324, 0.5, 1, 0, 0, 0, 1, 0.73333335, 1, 0, -0.081358686, 0, 0.9966849, 0.76666665, 1, 0, -0.081358686, 0, 0.99668497, 0.96666664, 1, 0, -0.0116352765, 0, 0.99993235, 1, 1, 0, 0, 0, 1)
+tracks/1/type = "position_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("Organism/Legs")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.23333333, 1, 0, 0.029166667, 0, 0.26666668, 1, 0, 0.029166665, 0, 0.53333336, 1, 0, 0.00416667, 0, 0.73333335, 1, 0, 0.029166669, 0, 0.76666665, 1, 0, 0.029166669, 0, 1, 1, 0, 0, 0)
+tracks/2/type = "rotation_3d"
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/path = NodePath("Organism/Legs")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.16666667, 1, -0.06526309, -0.06526309, -0.0042775692, 0.9957224, 0.2, 1, -0.034788765, -0.052297052, -0.0034277302, 0.9980196, 0.23333333, 1, -0.0042760666, -0.03927334, -0.0025741109, 0.9992161, 0.26666668, 1, 0.026241353, -0.026206313, -0.0017176524, 0.9993106, 0.3, 1, 0.05672983, -0.013110386, -0.00085930014, 0.9983032, 0.33333334, 1, 0.087155744, 0, 0, 0.9961948, 0.46666667, 1, 0.017452408, 0, 0, 0.99984777, 0.5, 1, 0, 0, 0, 1, 0.6666667, 1, -0.06526309, 0.06526309, 0.0042775692, 0.9957224, 0.7, 1, -0.034788784, 0.05229706, 0.0034277306, 0.9980196, 0.73333335, 1, -0.0042760517, 0.039273333, 0.0025741102, 0.9992161, 0.76666665, 1, 0.026241334, 0.026206316, 0.0017176528, 0.9993106, 0.8, 1, 0.056729846, 0.013110377, 0.0008592995, 0.9983032, 0.8333333, 1, 0.087155744, 0, 0, 0.9961948, 0.96666664, 1, 0.017452423, 0, 0, 0.99984777, 1, 1, 0, 0, 0, 1)
+tracks/3/type = "position_3d"
+tracks/3/imported = true
+tracks/3/enabled = true
+tracks/3/path = NodePath("Main")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.23333333, 1, 0, 0.0175, 0, 0.26666668, 1, 0, 0.0175, 0, 0.53333336, 1, 0, 0.0025000023, 0, 0.73333335, 1, 0, 0.017500002, 0, 0.76666665, 1, 0, 0.017500002, 0, 1, 1, 0, 0, 0)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_o0bnu"]
+_data = {
+&"animation_Crab_scuttle": SubResource("Animation_4w3xj")
+}
+
 [node name="Crab" type="Area3D" groups=["Enemy"]]
 script = ExtResource("1_pqynj")
 entity_active = true
-entity_speed = 0.4
-raycast_height = 0.1
+entity_speed = 1.2
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
-path_desired_distance = 0.1
 path_height_offset = 0.4
 debug_enabled = true
 
 [node name="Hitbox" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.187, 0)
 shape = SubResource("BoxShape3D_8rjnm")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_o0bnu")
-}
-autoplay = "animation_Crab_scuttle"
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.18377203, 0)
-visible = false
-mesh = SubResource("BoxMesh_pqynj")
 
 [node name="Organism" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03573799, 0, -0.05685042)
@@ -415,7 +399,16 @@ mesh = SubResource("ArrayMesh_xqkwm")
 skeleton = NodePath("")
 
 [node name="Main" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03573799, 0, -0.05685042)
 
 [node name="Shell" type="MeshInstance3D" parent="Main"]
 mesh = SubResource("ArrayMesh_25sek")
 skeleton = NodePath("")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_o0bnu")
+}
+autoplay = "animation_Crab_scuttle"
+
+[connection signal="target_reached" from="NavigationAgent3D" to="." method="_on_navigation_agent_3d_target_reached"]

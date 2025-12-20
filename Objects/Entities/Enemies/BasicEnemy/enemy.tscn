@@ -6,6 +6,7 @@
 albedo_color = Color(0.196078, 0.223529, 1, 1)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_nfiwy"]
+radius = 0.2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_twpdn"]
 albedo_color = Color(0.9252882, 0.9343878, 0.9995428, 1)
@@ -15,6 +16,7 @@ radius = 0.07
 height = 0.14
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_swcoo"]
+radius = 0.2
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7rnlx"]
 radius = 0.53
@@ -24,6 +26,7 @@ height = 2.03
 script = ExtResource("1_twpdn")
 speed = 2.5
 jump_velocity = 4.5
+entity_active = true
 
 [node name="Model" type="MeshInstance3D" parent="."]
 layers = 2
@@ -65,5 +68,6 @@ disabled = true
 avoidance_enabled = true
 height = 2.0
 neighbor_distance = 10.0
+debug_enabled = true
 
 [connection signal="body_entered" from="DamageArea" to="." method="_on_damage_area_body_entered"]

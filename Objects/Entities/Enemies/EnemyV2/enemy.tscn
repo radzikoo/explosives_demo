@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://o8287imtfnaq"]
 
-[ext_resource type="Script" uid="uid://cw8u1k4ly35se" path="res://Objects/Entities/Enemies/BasicEnemy/enemy.gd" id="1_26u6c"]
+[ext_resource type="Script" uid="uid://c180q7qstp0ev" path="res://Objects/Entities/Enemies/EnemyV2/enemy_v2.gd" id="1_26u6c"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4paj3"]
 albedo_color = Color(0.196078, 0.223529, 1, 1)
@@ -24,8 +24,8 @@ height = 0.375
 
 [node name="Enemy" type="StaticBody3D" groups=["Enemy"]]
 script = ExtResource("1_26u6c")
-speed = 1.2
 entity_active = true
+entity_speed = 1.2
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 

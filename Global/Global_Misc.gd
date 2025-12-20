@@ -1,10 +1,10 @@
 extends Node
 
-enum entity_state { ##Enum responsible for entity behaviour
-	IDLE, ## 0  Waits for instructions/state change
-	RUN_ATTACK, ## 1  Runs toward target
-	WANDER, ## 2  Wanders around and waits for instructions/state change
-	ATTACKING ## 3  When enough close to target and deals damage do it.
+enum entity_state { ##0-IDLE  1-RUN_ATTACK   2-WANDER   3-ATTACKING
+	IDLE, 
+	RUN_ATTACK,
+	WANDER,
+	ATTACKING
 	}
 
 func truncate_v3(vect:Vector3) -> Vector3:
