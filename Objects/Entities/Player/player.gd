@@ -1,35 +1,38 @@
 extends CharacterBody3D
 class_name Player
 
+@export var enabled:bool = true
 @export var auto_jump:bool = true
 @export var speed:float
 @export var walk_speed = 3.2
-@export var sprint_speed = 4.5
-@export var jump_velocity:float = 5
+@export var sprint_speed = 4.6
+@export var jump_velocity:float = 5.3
 @export var sensitivity = 0.0016
 @export var bob_freq = 5.4
-@export var bob_amp = 0.02
+@export var bob_amp = 0.04
 @export var t_bob = 0.0
 @export var base_fov = 75.0
-@export var fov_change = 0.5
+@export var fov_change = 0.9
 @export var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 var cursor_hidden: bool = true
 
-var health:float = 100
+var health:float = 10
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _physics_process(delta: float) -> void:
-	$UI/HealthBar.value = health
-	_player_movement(delta)
-	get_raycast()
-	get_target()
-	_check_nearby_enemies()
+	if enabled:
+		$UI/HealthBar.value = health
+		_player_movement(delta)
+		get_raycast()
+		get_target()
+		_check_nearby_enemies()
 	
 @onready var head:Node3D = $Head
 @onready var camera:Camera3D = $Head/Camera3D
+@onready var hand: Node3D = $Head/Camera3D/Hand
 @onready var ajd1: RayCast3D = $AutoJumpDetector/RayCast3D
 @onready var ajd2: RayCast3D = $AutoJumpDetector/RayCast3D2
 
@@ -69,6 +72,8 @@ func _player_movement(delta: float) -> void:
 	# Head bob
 	t_bob += delta * velocity.length() * float(is_on_floor())
 	camera.transform.origin = _headbob(t_bob)
+	#hand.transform.origin = hand.transform.origin-_headbob(t_bob)
+	
 	
 	# FOV
 	var velocity_clamped = clamp(velocity.length(), 0.5, sprint_speed * 2)
@@ -188,15 +193,15 @@ func get_target():
 		target_chunk_id = Vector2(floor(snapped_targetpos.x/chunk_manager.chunk_size.x), 
 			floor(snapped_targetpos.z/chunk_manager.chunk_size.z))
 		
-		if Input.is_action_just_pressed("destroy"):
-			chunk_manager.destroy_tile(snapped_targetpos, target_chunk_id)
+		#if Input.is_action_just_pressed("destroy"):
+			#chunk_manager.destroy_tile(snapped_targetpos, target_chunk_id)
 			#print("=======")
 			#print("FACE: ", target_face)
 			#print("CHUNK: ", target_chunk_id)
-			print("TARGET POS: ", target_pos)
-			print("SNAPP TARG POS: ", snapped_targetpos)
-		if Input.is_action_just_pressed("place"):
-			chunk_manager.place_tile(snapped_targetpos, target_chunk_id)
+			#print("TARGET POS: ", target_pos)
+			#print("SNAPP TARG POS: ", snapped_targetpos)
+		#if Input.is_action_just_pressed("place"):
+			#chunk_manager.place_tile(snapped_targetpos, target_chunk_id)
 
 func _on_damage_area_body_entered(body: Node3D) -> void:
 	if body is RigidBody3D:
@@ -205,6 +210,8 @@ func _on_damage_area_body_entered(body: Node3D) -> void:
 			#print("HIT ", ((body.linear_velocity.length()) * body.mass))
 
 func take_damage(damage:float):
+	$AudioStreamPlayer3D.pitch_scale = randf_range(0.85, 1.2)
+	$AudioStreamPlayer3D.play()
 	health -= damage
 
 var nearby_enemies:Array
@@ -222,6 +229,7 @@ func _on_entity_detector_body_exited(body: Node3D) -> void:
 func _on_entity_detector_area_entered(area: Area3D) -> void:
 	#var node:Node3D = area.get_parent()
 	if area.is_in_group("Enemy"):
+		print("adadasd")
 		nearby_enemies.append(area)
 
 func _on_entity_detector_area_exited(area: Area3D) -> void:
@@ -238,3 +246,4 @@ func _check_nearby_enemies():
 		for enemy in nearby_enemies:
 			if enemy.entity_target != self:
 				enemy.entity_target = self
+	

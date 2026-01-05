@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://d3s8yxuvpmekm" path="res://addons/PlayerCharacter/StateMachine/PlayerCharacterScript.gd" id="1_h128t"]
 [ext_resource type="Script" uid="uid://b0fbr48rbvn27" path="res://addons/PlayerCharacter/Camera/CameraScript.gd" id="2_x12n0"]
 [ext_resource type="PackedScene" uid="uid://bef7khh4rcx5x" path="res://Objects/Static/Weapons/Bow/bow.tscn" id="3_ypkm2"]
-[ext_resource type="Script" uid="uid://bly8e4btvdv3n" path="res://Global/Global_PFX.gd" id="12_17hed"]
+[ext_resource type="Script" uid="uid://bly8e4btvdv3n" path="res://Scripts/Global/Global_PFX.gd" id="12_17hed"]
 [ext_resource type="Script" uid="uid://dx02l6p6behb8" path="res://addons/PlayerCharacter/UI/HUDScript.gd" id="16_5jm78"]
 [ext_resource type="FontFile" uid="uid://bwr73i28ligrq" path="res://addons/Arts/Ticketing.ttf" id="17_ryxgj"]
 [ext_resource type="Script" uid="uid://sca7ypsol83f" path="res://addons/PlayerCharacter/StateMachine/StateMachineScript.gd" id="54_e0r17"]

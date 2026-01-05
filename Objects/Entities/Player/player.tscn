@@ -1,15 +1,21 @@
-[gd_scene load_steps=9 format=3 uid="uid://cbwmjfmsixre"]
+[gd_scene load_steps=13 format=3 uid="uid://cbwmjfmsixre"]
 
 [ext_resource type="Script" uid="uid://b1ffvrolhrupb" path="res://Objects/Entities/Player/player.gd" id="1_dl76h"]
-[ext_resource type="Shader" uid="uid://8l4jam6cact4" path="res://Objects/Entities/Player/crosshair.gdshader" id="3_rwkt4"]
+[ext_resource type="Script" uid="uid://bofgtif4jmgb0" path="res://Objects/Entities/Player/player_hand.gd" id="2_l46qd"]
+[ext_resource type="PackedScene" uid="uid://ljbdfnvyslum" path="res://Objects/Static/Weapons/Sword/sword.tscn" id="2_wwvg7"]
+[ext_resource type="Shader" uid="uid://8l4jam6cact4" path="res://Assets/Resources/Shaders/crosshair.gdshader" id="3_rwkt4"]
 [ext_resource type="Script" uid="uid://5holnkba03s1" path="res://Objects/Entities/Player/ui.gd" id="3_wwvg7"]
 [ext_resource type="Texture2D" uid="uid://64s7cymliucf" path="res://Assets/2D/Textures/crosshair.png" id="4_q3yuq"]
+[ext_resource type="AudioStream" uid="uid://diyam02tg05un" path="res://Assets/Sounds/damage_impact.wav" id="7_kmwgw"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_vsbmu"]
 size = Vector3(0.7, 1.8, 0.7)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e6v1b"]
 size = Vector3(0.7, 1.8, 0.7)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l46qd"]
+bg_color = Color(1, 0.1764706, 0.16078432, 0.6431373)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_q3yuq"]
 shader = ExtResource("3_rwkt4")
@@ -26,6 +32,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.54587, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Head"]
 current = true
+
+[node name="Hand" type="Node3D" parent="Head/Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.54587, 0)
+script = ExtResource("2_l46qd")
+
+[node name="Sword" parent="Head/Camera3D/Hand" instance=ExtResource("2_wwvg7")]
+transform = Transform3D(1.3395631, 0.15387736, -0.24247193, 0, 1.1567292, 0.7340827, 0.28717744, -0.71777385, 1.1310304, 0.603, 1.135, -0.416)
 
 [node name="Body" type="Node3D" parent="."]
 
@@ -77,6 +90,8 @@ offset_top = 5.0
 offset_right = 307.5
 offset_bottom = 32.0
 grow_horizontal = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_l46qd")
+max_value = 10.0
 
 [node name="WeaponCharge" type="ProgressBar" parent="UI"]
 visible = false
@@ -161,10 +176,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.15, 0)
 target_position = Vector3(0, 0, -0.6)
 
 [node name="EntityDetector" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EntityDetector"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35046387, 0)
 shape = SubResource("CylinderShape3D_q3yuq")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("7_kmwgw")
 
 [connection signal="body_entered" from="DamageArea" to="." method="_on_damage_area_body_entered"]
 [connection signal="pressed" from="UI/Teleporter/VBoxContainer/Teleport" to="UI" method="_on_teleport_pressed"]

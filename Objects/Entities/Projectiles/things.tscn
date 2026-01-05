@@ -1,0 +1,1287 @@
+[gd_scene load_steps=4 format=3 uid="uid://cnqadaqrot14i"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o13o6"]
+albedo_color = Color(0.5554064, 0.22951776, 0.9999996, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4wyf3"]
+material = SubResource("StandardMaterial3D_o13o6")
+size = Vector3(0.25, 0.25, 0.25)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k0juu"]
+size = Vector3(0.25, 0.25, 0.25)
+
+[node name="Things" type="Node3D"]
+
+[node name="RigidBody3D242" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D242"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D242"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D243" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D243"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D243"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D244" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D244"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D244"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D245" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D245"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D245"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D246" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D246"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D246"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D247" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D247"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D247"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D248" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D248"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D248"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D249" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D249"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D249"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D250" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D250"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D250"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D251" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D251"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D251"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D252" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D252"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D252"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D253" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D253"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D253"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D254" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D254"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D254"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D255" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D255"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D255"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D256" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D256"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D256"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D257" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D257"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D257"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D258" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D258"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D258"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D259" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D259"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D259"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D260" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D260"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D260"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D261" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D261"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D261"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D262" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D262"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D262"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D263" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D263"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D263"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D264" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D264"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D264"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D265" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D265"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D265"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D266" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D266"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D266"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D267" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D267"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D267"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D268" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D268"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D268"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D269" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D269"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D269"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D270" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D270"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D270"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D271" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D271"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D271"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D272" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D272"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D272"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D273" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D273"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D273"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D274" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D274"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D274"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D275" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D275"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D275"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D276" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D276"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D276"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D277" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D277"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D277"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D278" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D278"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D278"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D279" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D279"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D279"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D280" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D280"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D280"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D281" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D281"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D281"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D282" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D282"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D282"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D283" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D283"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D283"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D284" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D284"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D284"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D285" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D285"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D285"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D286" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D286"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D286"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D287" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D287"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D287"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D288" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D288"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D288"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D289" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D289"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D289"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D290" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D290"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D290"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D291" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D291"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D291"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D292" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D292"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D292"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D293" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D293"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D293"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D294" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D294"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D294"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D295" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D295"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D295"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D296" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D296"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D296"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D297" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D297"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D297"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D298" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D298"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D298"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D299" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D299"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D299"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D300" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D300"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D300"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D301" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D301"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D301"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D302" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D302"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D302"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D303" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D303"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D303"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D304" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D304"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D304"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D305" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D305"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D305"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D306" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D306"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D306"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D307" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D307"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D307"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D308" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D308"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D308"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D309" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D309"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D309"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D310" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D310"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D310"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D311" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D311"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D311"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D312" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D312"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D312"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D313" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D313"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D313"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D314" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D314"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D314"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D315" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D315"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D315"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D316" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D316"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D316"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D317" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D317"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D317"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D318" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D318"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D318"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D319" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D319"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D319"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D320" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D320"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D320"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D321" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D321"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D321"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D322" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D322"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D322"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D323" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D323"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D323"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D324" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D324"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D324"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D325" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D325"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D325"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D326" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D326"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D326"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D327" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D327"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D327"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D328" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D328"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D328"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D329" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D329"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D329"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D330" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D330"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D330"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D331" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D331"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D331"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D332" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D332"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D332"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D333" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D333"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D333"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D334" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D334"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D334"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D335" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D335"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D335"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D336" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D336"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D336"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D337" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D337"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D337"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D338" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D338"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D338"]
+shape = SubResource("BoxShape3D_k0juu")
+
+[node name="RigidBody3D339" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
+mass = 0.682
+continuous_cd = true
+metadata/destructible = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D339"]
+mesh = SubResource("BoxMesh_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D339"]
+shape = SubResource("BoxShape3D_k0juu")

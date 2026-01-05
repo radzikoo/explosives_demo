@@ -1,0 +1,53 @@
+[gd_scene load_steps=9 format=3 uid="uid://ljbdfnvyslum"]
+
+[ext_resource type="Script" uid="uid://buya8aiob6t80" path="res://Objects/Static/Weapons/Sword/sword.gd" id="1_ioyox"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ioyox"]
+albedo_color = Color(0.6107743, 0.6579885, 0.6543673, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ioyox"]
+material = SubResource("StandardMaterial3D_ioyox")
+size = Vector3(0.005, 0.425, 0.065)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mk26q"]
+albedo_color = Color(0.40932602, 0.4541607, 0.4505111, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jh137"]
+material = SubResource("StandardMaterial3D_mk26q")
+size = Vector3(0.005, 0.29, 0.045)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jh137"]
+albedo_color = Color(0.65164614, 0.2922749, 0.20034006, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5m73p"]
+material = SubResource("StandardMaterial3D_jh137")
+size = Vector3(0.01, 0.04, 0.155)
+
+[sub_resource type="PrismMesh" id="PrismMesh_ioyox"]
+material = SubResource("StandardMaterial3D_ioyox")
+size = Vector3(0.065, 0.12, 0.005)
+
+[node name="Sword" type="Node3D"]
+script = ExtResource("1_ioyox")
+
+[node name="Mesh" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Mesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.34105706, 0)
+mesh = SubResource("BoxMesh_ioyox")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Mesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.024047732, 0)
+mesh = SubResource("BoxMesh_jh137")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Mesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.118398204, 0)
+mesh = SubResource("BoxMesh_5m73p")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Mesh"]
+transform = Transform3D(-4.3711385e-08, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, -4.3711385e-08, 0, 0.6123486, 0)
+mesh = SubResource("PrismMesh_ioyox")
+skeleton = NodePath("../..")
