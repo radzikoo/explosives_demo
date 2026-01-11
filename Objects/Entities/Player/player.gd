@@ -1,6 +1,11 @@
 extends CharacterBody3D
 class_name Player
 
+@onready var weapon_charge_bar: ProgressBar = $UI/WeaponCharge
+
+@onready var damage_area: Area3D = $DamageArea
+
+
 @export var enabled:bool = true
 @export var auto_jump:bool = true
 @export var speed:float
@@ -246,4 +251,11 @@ func _check_nearby_enemies():
 		for enemy in nearby_enemies:
 			if enemy.entity_target != self:
 				enemy.entity_target = self
+
+func apply_vector_force(from:Vector3, vertical_force:float = 4, horizontal_force:float = 16):
+	var dir:Vector3 = (global_position - from).normalized()
+	if abs(velocity.y) < 1:
+		velocity.y =+ vertical_force
+	velocity.x =+ dir.x * horizontal_force
+	velocity.z =+ dir.z * horizontal_force
 	

@@ -1,55 +1,61 @@
-[gd_scene load_steps=6 format=3 uid="uid://dira71b32v7yy"]
+[gd_scene load_steps=7 format=3 uid="uid://dira71b32v7yy"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6ascj"]
-albedo_color = Color(0.8299974, 0.18807426, 0.2619839, 1)
-emission_enabled = true
-emission = Color(0.9890024, 0.53456527, 0.728827, 1)
-emission_energy_multiplier = 1.2
-
-[sub_resource type="CylinderMesh" id="CylinderMesh_jm1kk"]
-material = SubResource("StandardMaterial3D_6ascj")
-top_radius = 0.025
-bottom_radius = 0.025
-height = 0.3
+[ext_resource type="Texture2D" uid="uid://bks6ercj7xlmq" path="res://Objects/Static/Weapons/Bow/arrow.png" id="1_kqejo"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_6ascj"]
-height = 0.35634765
+height = 0.38010255
 radius = 0.025
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jm1kk"]
-albedo_color = Color(0.08445693, 0.24661577, 0.762521, 1)
-emission_enabled = true
-emission = Color(0.10034246, 0.28425336, 0.60014206, 1)
-emission_energy_multiplier = 1.2
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kqejo"]
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_kqejo")
+uv1_scale = Vector3(1, 0.815, 1)
+texture_filter = 0
 
-[sub_resource type="PrismMesh" id="PrismMesh_x8jxp"]
-material = SubResource("StandardMaterial3D_jm1kk")
-size = Vector3(0.055, 0.055, 0.055)
+[sub_resource type="QuadMesh" id="QuadMesh_rkvbf"]
+lightmap_size_hint = Vector2i(6, 3)
+material = SubResource("StandardMaterial3D_kqejo")
+size = Vector2(0.9, 0.27)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ertax"]
+transparency = 4
+cull_mode = 1
+albedo_texture = ExtResource("1_kqejo")
+uv1_scale = Vector3(0.5, 0.394, 0.394)
+uv1_offset = Vector3(0, -0.18, 0)
+uv1_world_triplanar = true
+texture_filter = 0
+
+[sub_resource type="QuadMesh" id="QuadMesh_gouen"]
+lightmap_size_hint = Vector2i(6, 3)
+material = SubResource("StandardMaterial3D_ertax")
+size = Vector2(0.45, 0.135)
+center_offset = Vector3(0.2, 0, 0)
 
 [node name="Bullet" type="RigidBody3D" groups=["Projectile"]]
 collision_layer = 2
+collision_mask = 2
 mass = 0.1
-freeze_mode = 1
-continuous_cd = true
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
-mesh = SubResource("CylinderMesh_jm1kk")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 1.2315168e-09, -0.02817382)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 3.5163356e-10, 0.0006482601)
 shape = SubResource("CylinderShape3D_6ascj")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, -0.17847541)
-mesh = SubResource("PrismMesh_x8jxp")
+disabled = true
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 7.0
 one_shot = true
 autostart = true
 
-[node name="RayCast3D" type="RayCast3D" parent="."]
-target_position = Vector3(0, 0, -0.37)
-collision_mask = 5
-collide_with_areas = true
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 0)
+mesh = SubResource("QuadMesh_rkvbf")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.3113416e-07, -1, -4.371139e-08, -3.821371e-15, 4.371139e-08, -1, 1, 1.3113416e-07, 1.9106855e-15, 0, 0, 0)
+mesh = SubResource("QuadMesh_rkvbf")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="."]
+transform = Transform3D(4.371139e-08, -1, -8.742278e-08, -1, -4.371139e-08, 0, -3.821371e-15, 8.742278e-08, -1, 0.036966555, 0.004888868, 0.44996434)
+mesh = SubResource("QuadMesh_gouen")

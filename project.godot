@@ -38,6 +38,7 @@ movie_writer/movie_file="D:/Godot Games/explosives_demo/ee.avi"
 Enemy=""
 Projectile=""
 Terrain=""
+Players=""
 
 [input]
 

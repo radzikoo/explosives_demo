@@ -73,7 +73,6 @@ func add_quad(st: SurfaceTool, x: int, z: int):
 	var uv01 = Vector2(0, 1)
 	var uv11 = Vector2(1, 1)
 
-	# biom z środka quada
 	var biome_id := 0.0
 	if biome_noise.get_noise_2d(wx + tile_size * 0.5, wz + tile_size * 0.5) > 0.0:
 		biome_id = 1.0

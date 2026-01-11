@@ -12,7 +12,7 @@ var audio_player:AudioStreamPlayer3D
 @export var entity_speed:float = 0.7
 @onready var entity_target:Object
 var entity_state:Misc.entityState = Misc.entityState.WANDER
-@export var entity_health:float = 99
+@export var entity_health:float = 4
 @export var show_health_status:bool = false
 
 #Navigation realted things
@@ -43,7 +43,6 @@ func _ready() -> void:
 	_init_entity()
 
 func _physics_process(delta: float) -> void:
-	health_status.text = str(velocity)
 	if entity_active:
 		_handle_target(delta)
 		_handle_movement(delta)
@@ -63,16 +62,16 @@ func _init_entity():
 			else:
 				child.call_deferred("queue_free")
 			
-	#if show_health_status and health_status: health_status.text = str(entity_health)
+	if show_health_status and health_status: health_status.text = str(entity_health)
 	await NavigationServer3D.map_changed
 	agent.set_navigation_map(agent.get_navigation_map())
 	_get_random_pos()
 
 func _get_random_pos():
 	can_get_rand_pos = true
-	var posx = randi_range(-5,5)
-	var posz = randi_range(-5,5)
-	var fpos = Vector3(global_position.x + posx, global_position.y, global_position.z + posz)
+	var posx:float = randi_range(-5,5)
+	var posz:float = randi_range(-5,5)
+	var fpos:Vector3 = Vector3(global_position.x + posx, global_position.y, global_position.z + posz)
 	random_pos = NavigationServer3D.map_get_closest_point(agent.get_navigation_map(), fpos)
 	agent.set_target_position(random_pos)
 	can_get_rand_pos = false
@@ -117,8 +116,8 @@ func _handle_movement(delta: float):
 			if velocity.y < 0:
 				velocity.y = 0
 				
-		velocity.x = lerp(velocity.x, 0.0, gravity * delta)
-		velocity.z = lerp(velocity.z, 0.0, gravity * delta)
+			velocity.x = lerp(velocity.x, 0.0, gravity * delta)
+			velocity.z = lerp(velocity.z, 0.0, gravity * delta)
 			
 		#print("Physics update on ", name)
 		move_and_slide()
@@ -135,7 +134,7 @@ func _handle_movement(delta: float):
 					
 				if agent.is_target_reachable():
 					next_pos = agent.get_next_path_position()
-					var dir = (next_pos - global_position).normalized()
+					var dir:Vector3 = (next_pos - global_position).normalized()
 					_velocity = dir * entity_speed
 					_update_rotation(delta, dir) #W zaleznosci co ma trackowac przeciwnik, target, czy pozycje do ktorej idzie podczas targetowania targetu.
 					if attack_time != 0.5:
@@ -153,7 +152,7 @@ func _handle_movement(delta: float):
 				if !target_reached:
 					if agent.is_target_reachable():
 						next_pos = agent.get_next_path_position()
-						var dir = (next_pos - global_position).normalized()
+						var dir:Vector3 = (next_pos - global_position).normalized()
 						_velocity = dir * entity_speed
 						_update_rotation(delta, dir)
 						
@@ -196,30 +195,43 @@ func _handle_animation():
 func _on_navigation_agent_3d_target_reached() -> void:
 	target_reached = true
 
-func take_damage(amount:float, knockback:float = 0):
+func take_damage(amount:float):
 	audio_player.play()
-	turn_red()
 	if amount < 0 or entity_health-amount <= 0:
-		if audio_player.playing:
-			$Hitbox.disabled = true
-			self.hide()
-			await audio_player.finished
-			call_deferred("queue_free")
-		else:
-			call_deferred("queue_free")
+		_die()
 	else:
+		turn_red()
 		entity_health -= amount
 	if show_health_status and health_status:
 		pass
-		#health_status.text = str(entity_health)
+		health_status.text = str(entity_health)
 
-func turn_red():
-	var meshes = find_children("*", "MeshInstance3D", true)
+func turn_red(one_shot:bool = false):
+	var meshes:Array = find_children("*", "MeshInstance3D", true)
 	for m in meshes:
 		m.material_overlay = Misc.DAMAGE_FLASH
-	await get_tree().create_timer(0.15).timeout
-	for m in meshes:
-		m.material_overlay = null
+	if !one_shot:
+		await get_tree().create_timer(0.15).timeout
+		for m in meshes:
+			m.material_overlay = null
+
+func _remove_from_tree():
+	if audio_player.playing:
+		await audio_player.finished
+		call_deferred("queue_free")
+	else:
+		call_deferred("queue_free")
+
+func _die():
+	turn_red(true)
+	entity_active = false
+	var colliders:Array = find_children("*", "CollisionShape3D", true)
+	for collider in colliders:
+		collider.set_deferred("disabled", true)
+	var tween:Tween = get_tree().create_tween()
+	tween.tween_property(self, "rotation_degrees", Vector3(-110, self.rotation_degrees.y, 0), 0.85)
+	await get_tree().create_timer(1.15).timeout
+	_remove_from_tree()
 
 func apply_vector_force(from:Vector3, vertical_force:float = 4, horizontal_force:float = 16):
 	var dir:Vector3 = (global_position - from).normalized()

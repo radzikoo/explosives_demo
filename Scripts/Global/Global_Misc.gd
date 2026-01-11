@@ -4,11 +4,12 @@ const HIT_FLASH = preload("uid://bexq8odvh3toy")
 const DAMAGE_FLASH = preload("uid://ce00pwvblk38n")
 
 
-enum entityState { ##0-IDLE  1-RUN_ATTACK   2-WANDER   3-ATTACKING
-	IDLE, 
+enum entityState { ##0-IDLE  1-RUN_ATTACK   2-WANDER   3-ATTACKING   4-SUFFER
+	IDLE,
 	RUN_ATTACK,
 	WANDER,
-	ATTACKING
+	ATTACKING,
+	SUFFER
 	}
 
 func truncate_v3(vect:Vector3) -> Vector3:

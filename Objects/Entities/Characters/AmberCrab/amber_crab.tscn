@@ -376,7 +376,6 @@ shadow_mesh = SubResource("ArrayMesh_0eyv3")
 [node name="AmberCrab" type="CharacterBody3D" groups=["Enemy"]]
 collision_layer = 2
 script = ExtResource("1_4hd7u")
-entity_health = 999.0
 show_health_status = true
 metadata/_custom_type_script = "uid://c180q7qstp0ev"
 

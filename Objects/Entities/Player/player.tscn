@@ -1,8 +1,8 @@
 [gd_scene load_steps=13 format=3 uid="uid://cbwmjfmsixre"]
 
 [ext_resource type="Script" uid="uid://b1ffvrolhrupb" path="res://Objects/Entities/Player/player.gd" id="1_dl76h"]
-[ext_resource type="Script" uid="uid://bofgtif4jmgb0" path="res://Objects/Entities/Player/player_hand.gd" id="2_l46qd"]
 [ext_resource type="PackedScene" uid="uid://ljbdfnvyslum" path="res://Objects/Static/Weapons/Sword/sword.tscn" id="2_wwvg7"]
+[ext_resource type="PackedScene" uid="uid://bd1w5w5tt6j0p" path="res://Objects/Static/Weapons/Bow/bow.tscn" id="3_kmwgw"]
 [ext_resource type="Shader" uid="uid://8l4jam6cact4" path="res://Assets/Resources/Shaders/crosshair.gdshader" id="3_rwkt4"]
 [ext_resource type="Script" uid="uid://5holnkba03s1" path="res://Objects/Entities/Player/ui.gd" id="3_wwvg7"]
 [ext_resource type="Texture2D" uid="uid://64s7cymliucf" path="res://Assets/2D/Textures/crosshair.png" id="4_q3yuq"]
@@ -34,11 +34,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.54587, 0)
 current = true
 
 [node name="Hand" type="Node3D" parent="Head/Camera3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.54587, 0)
-script = ExtResource("2_l46qd")
+transform = Transform3D(-0.3056835, -0.085872516, -0.9482529, -0.23512456, 0.9718885, -0.012217001, 0.92264515, 0.21922301, -0.31728098, 0.575, -0.431, -0.55)
 
 [node name="Sword" parent="Head/Camera3D/Hand" instance=ExtResource("2_wwvg7")]
-transform = Transform3D(1.3395631, 0.15387736, -0.24247193, 0, 1.1567292, 0.7340827, 0.28717744, -0.71777385, 1.1310304, 0.603, 1.135, -0.416)
+transform = Transform3D(1, 0, 0, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="Bow2" parent="Head/Camera3D/Hand" instance=ExtResource("3_kmwgw")]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.9999999, 0, 0, 0)
 
 [node name="Body" type="Node3D" parent="."]
 

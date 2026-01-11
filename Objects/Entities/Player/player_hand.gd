@@ -17,8 +17,9 @@ enum itemType {
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("use_item"):
-		if item_type == itemType.MELEE:
-			item_node.use(get_raycast())
+		pass
+		#if item_type == itemType.MELEE:
+#			item_node.use(get_raycast())
 
 func get_raycast():
 	var space_state = get_world_3d().direct_space_state

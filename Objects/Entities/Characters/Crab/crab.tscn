@@ -346,7 +346,6 @@ shadow_mesh = SubResource("ArrayMesh_gnr4u")
 [node name="Crab" type="CharacterBody3D" groups=["Enemy"]]
 collision_layer = 2
 script = ExtResource("1_pqynj")
-entity_health = 999.0
 show_health_status = true
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]

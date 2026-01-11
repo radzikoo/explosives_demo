@@ -1,24 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://bef7khh4rcx5x"]
+[gd_scene load_steps=3 format=3 uid="uid://bd1w5w5tt6j0p"]
 
-[ext_resource type="Script" uid="uid://ca6y8yr4amox2" path="res://Objects/Static/Weapons/Bow/bow.gd" id="1_6faoe"]
-
-[sub_resource type="Curve" id="Curve_hrdkd"]
-_data = [Vector2(0.13207546, 0.5901639), 0.0, 0.0, 0, 0, Vector2(0.5691824, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.31967205), 0.0, 0.0, 0, 0]
-point_count = 3
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ql3n7"]
-albedo_color = Color(0.46627212, 0.2968915, 0.15695038, 1)
-
-[sub_resource type="TubeTrailMesh" id="TubeTrailMesh_xrpfr"]
-material = SubResource("StandardMaterial3D_ql3n7")
-radius = 0.1
-curve = SubResource("Curve_hrdkd")
+[ext_resource type="Script" uid="uid://cfals3bfpk17a" path="res://Objects/Static/Weapons/Bow/bow.gd" id="1_00umc"]
+[ext_resource type="ArrayMesh" uid="uid://bd4oxls77nbm" path="res://Objects/Static/Weapons/Bow/bow.obj" id="2_h82r1"]
 
 [node name="Bow" type="Node3D"]
-script = ExtResource("1_6faoe")
+script = ExtResource("1_00umc")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.99275714, -0.12013682, 5.2513482e-09, 0, -4.371138e-08, -1, 0.12013682, 0.99275714, -4.3394802e-08, 0.375, -0.225, -0.405)
-mesh = SubResource("TubeTrailMesh_xrpfr")
+[node name="Mesh" type="Node3D" parent="."]
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Bow" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.7, 0, 6.119594e-08, 0, 0.7, 0, -6.119594e-08, 0, -0.7, 0, 0, 0)
+mesh = ExtResource("2_h82r1")
